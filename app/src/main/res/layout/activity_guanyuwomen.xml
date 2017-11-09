@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#4183FF">
+
+        <RelativeLayout
+            android:id="@+id/rl_guanyuwomen_fanghui"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:layout_height="42dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:paddingTop="7dp"
+                android:layout_height="25dp"
+                android:background="@drawable/c_icon_fanhui"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="关于我们"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_weight="7"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:id="@+id/rl_username_save"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="20sp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_xuanzexiaoqu1_cance"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lv_fanhui"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_xuanzexiaoqu1_cance"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/d_btn_join" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:text="关于我们"
+                android:textColor="#333333"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/ll_xuanzexiaoqu1_add"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="86dp"
+        android:layout_height="86dp" 
+        android:background="@mipmap/app_logo"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="数字安防1.0"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="希洋科技（北京）有限公司"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp" 
+        android:layout_marginBottom="35dp"/>
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@id/my_content_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_xuanzexiaoqu1_cance"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lv_fanhui"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_xuanzexiaoqu1_cance"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/d_btn_join" />
+            </LinearLayout>
+
+ 
+
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:text="选择小区"
+                android:textColor="#333333"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_xuanzexiaoqu1_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_xuanzexiaoqu1_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加小区"
+                android:textSize="17sp"
+                android:textColor="#333333"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="12dp"
+            android:background="@drawable/f_icon_current" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前社区"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dizhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dingweidizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无"
+            android:textColor="#333333" />
+
+        <LinearLayout
+            android:id="@+id/ll_youdizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+
+                android:id="@+id/tv_dingweiname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:background="#888888" />
+
+            <TextView
+                android:id="@+id/tv_dingweiyezhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="业主" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp">
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="12dp"
+            android:background="@drawable/f_icon_other" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的其他社区"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <ListView
+            android:id="@+id/lv_qitashequ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_qitashequ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未添加其他社区"
+            android:textColor="#333333"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

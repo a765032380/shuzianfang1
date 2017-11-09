@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.bjxiyang.shuzianfang.myapplication.view.SwipeListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_keyaccredit">
+        </com.bjxiyang.shuzianfang.myapplication.view.SwipeListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:visibility="gone"
+        android:id="@+id/swipeRefreshLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_activity_wushouquan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/b_icon_wushouquan" />
+
+            <TextView
+                android:id="@+id/tv_wushouquan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前无授权"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:visibility="gone"
+        android:id="@+id/swipeRefreshLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_activity_wuwangluo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/d_icon_wanluoyichang" />
+
+            <TextView
+                android:id="@+id/tv_wuwangluo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络异常，请检查网络"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

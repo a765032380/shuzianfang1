@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:background="@drawable/g_icon_xiaoqu"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_item_xiaoqugonggao_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="智社区APP重要升级通知"
+                    android:textColor="#323232"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/iv_item_xiaoqugonggao_jinji"
+                    android:layout_width="40dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/a_m_icon_jinji" 
+                   />
+
+                <TextView
+                    android:id="@+id/tv_item_xiaoqugonggao_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2017.01.01"
+                    android:textSize="12sp"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_item_xiaoqugonggao_itmexiangqing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尊敬的业主：
+         尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业主：尊敬的业"
+                android:textColor="#909090" 
+                android:textSize="14sp"
+                android:paddingRight="50dp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_item_xiaoqugonggao_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:text="12:12:12"-->
+            <!--android:textSize="16sp" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_xiaoqugonggaoo_xiangqing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|right"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即查看"
+                android:textColor="#2e77ff"
+                android:textSize="14sp" />
+
+            <ImageView
+            android:id="@+id/iv_item_xiaoqugonggao_xiangqing"
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:background="@drawable/g_btn_join"
+            android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+               
+                android:id="@+id/tv_item_xiaoqugonggao_wuyeguanlichu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="物业管理处:"
+                android:textColor="#909090"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/g_img_xian" />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/my_content_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_home_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lv_shezhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:id="@+id/iv_shezhi"
+                            android:layout_width="16dp"
+                            android:layout_height="17dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/a_btn_menubar1" />
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/iv_tishi"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginTop="-10dp"
+                            android:background="@drawable/aii" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/iv_shezhi2"
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/welcome_btn"
+                            android:gravity="center"
+                            android:text="新消息"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/iv_tishi2"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="-28dp"
+                            android:background="@drawable/aii"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#ffffff"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ll_shezhi3"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_shezhi3"
+
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:background="@drawable/a_icon_news" />
+
+                        <ImageView
+                            android:id="@+id/iv_tishi3"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_marginLeft="-3dp"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginTop="-10dp"
+                            android:background="@drawable/aii"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    >
+                    <com.jude.rollviewpager.RollPagerView
+
+                        android:id="@+id/roll_view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+
+                        app:rollviewpager_play_delay="3000" />
+                    <com.bjxiyang.shuzianfang.myapplication.view.RoundByXfermode
+                        android:visibility="gone"
+                        android:id="@+id/home_sun"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/banner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp" >
+
+                    </com.bjxiyang.shuzianfang.myapplication.view.RoundByXfermode>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_yun1"
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/a_bg_yun_1" />
+
+                    <ImageView
+                        android:id="@+id/iv_yun2"
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="45dp"
+                        android:background="@drawable/a_bg_yun_2" />
+
+                    <ImageView
+                        android:id="@+id/iv_yun3"
+                        android:layout_width="120dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/a_bg_yun_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="-100dp"
+                    android:visibility="visible">
+
+                    <com.example.liangmutian.randomtextviewlibrary.RandomTextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_wendu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25℃"
+                        android:textColor="#333333"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wendu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tv_wendu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#FF0000"
+                        android:textSize="27sp" />
+                    <TextView
+                        android:id="@+id/tv_wendu3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/tv_tianqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="晴间多云"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请先选择小区"
+            android:textColor="#333333"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/a_btn_jinru" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_xiaoqugonggao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="25dp"
+            android:text="感谢您使用智社区"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/text_men"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tishi_home"
+                android:layout_width="130dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/a_btn_blue"
+                android:gravity="center"
+                android:text="请选择小区"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_marginTop="34dp"
+            android:gravity="center"
+            android:clipChildren="false"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

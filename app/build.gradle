@@ -1,0 +1,178 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias 'zhishequ'
+            keyPassword '123456'
+            storeFile file("/Users/gll/Desktop/bjxiyang.jks")
+            storePassword '123456'
+        }
+        bjxiyang {
+            keyAlias 'zhishequ'
+            keyPassword '123456'
+            storeFile file('/Users/gll/Desktop/bjxiyang.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.bjxiyang.shuzianfang"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 2
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        packagingOptions {
+            exclude "lib/x86/librealm-jni.so"
+            exclude "lib/mips/librealm-jni.so"
+            exclude "lib/armeabi/librealm-jni.so"
+            exclude "lib/arm64-v8a/librealm-jni.so"
+            exclude "lib/x86_64/librealm-jni.so"
+            exclude "lib/armeabi-v7a/librealm-jni.so"
+        }
+//        jackOptions {
+//            enabled true
+//        }
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "cac0b4f5b0866a9844581c66", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "bjxiyang", //用户渠道统计的渠道名称
+        ]
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs = ['libs']
+//        }
+//    }
+    dexOptions {
+        jumboMode = true
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        bjxiyangType {
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+//        targetCompatibility 1.8
+//        sourceCompatibility 1.8
+    }
+}
+
+//GreenDao的依赖
+//apply plugin: 'org.greenrobot.greendao'
+
+//greendao {
+//    schemaVersion 2
+//    daoPackage 'com.bjxiyang.zhinengshequ.myapplication.bianlidian'
+//    targetGenDir 'src/main/java'
+//}
+repositories  {
+    maven { url 'https://jitpack.io' }
+            flatDir {
+                 dirs 'libs'
+                    }
+              }
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //图片轮播
+    //    compile 'com.panxw.imageindicator:library:1.0.2'
+    //    compile 'com.facebook.fresco:webpsupport:0.12.0'
+    //    compile 'com.facebook.fresco:fresco:1.2.0'
+    //    compile 'com.facebook.fresco:animated-base-support:0.12.0'
+    //    compile 'com.facebook.fresco:animated-gif:0.12.0'
+    //    compile 'com.facebook.fresco:animated-webp:0.12.0'
+    //自定义崩溃页面
+    compile 'cat.ereza:customactivityoncrash:1.5.0'
+    //带图片和文字的button
+    //    compile 'cn.dxjia:imagetextbutton:1.0.0'
+    //    compile 'com.squareup.okhttp:okhttp:2.7.2'
+    compile 'com.google.code.gson:gson:2.8.0'
+    //正在加载中
+    //    compile 'com.github.medyo:dynamicbox:1.2@aar'
+    compile 'com.amap.api:location:latest.integration'
+    //动态权限的框架
+    compile 'pub.devrel:easypermissions:0.4.0'
+    testCompile 'junit:junit:4.12'
+    //炫酷的输入框
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    //轮播图
+    compile 'com.jude:rollviewpager:1.2.9'
+    compile 'com.afollestad.material-dialogs:core:0.9.4.4'
+    //开源的动画库
+    compile 'com.nineoldandroids:library:2.4.0'
+    //上拉刷新和下拉加载更多的框架
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.0.7@aar'
+    //动画依赖包
+    compile 'com.daimajia.androidanimations:library:1.1.3@aar'
+    //xutils
+    compile 'com.jiechic.library:xUtils:2.6.14'
+    //viewPager指示器
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile project(path: ':myapplication')
+    compile project(path: ':imoocsdk')
+    //    compile 'com.flipboard:bottomsheet-core:1.5.1'
+    //滑动返回的依赖
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    //极光推送的依赖
+    compile 'cn.jiguang.sdk:jpush:3.0.5'
+    // 此处以JPush 3.0.5 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.2'
+    // 此处以JCore 1.1.2 版本为例。
+    compile files('libs/proguard.jar')
+    compile files('libs/proguardgui.jar')
+    compile files('libs/retrace.jar')
+    //微信支付的依赖
+    //    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:0.0.4'
+    //    //GreenDao的依赖
+    //    compile 'org.greenrobot:greendao:3.2.0'
+    //    compile files('libs/alipaySingle-20170510.jar')
+    //鲁班的依赖，用于图片压缩
+    compile 'top.zibin:Luban:1.1.2'
+    compile project(':qAMasterSDK')
+    //    compile(name:'yunzt_Full_1.0', ext:'aar')
+    //分包的依赖
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'org.robolectric:shadows-multidex:3.3.1'
+    //注解框架
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //数字滚动的依赖
+    compile 'com.github.AndroidMsky:RandomTextView:v1.3'
+    //    compile project(path: ':transitionhelper')
+    compile project(path: ':viewspreadtranslationlibrary')
+    compile files('libs/lite-orm-1.7.0.jar')
+    //微信支付的依赖
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:0.0.4'
+    //下拉刷新依赖
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.1'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.1'
+    //如果使用了特殊的Header
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile project(path: ':pullToRefresh')
+    //首页轮播图
+    compile 'com.jude:rollviewpager:1.2.9'
+}

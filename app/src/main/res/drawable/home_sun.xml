@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+    <item android:drawable="@drawable/sun01" android:duration="150" />
+    <item android:drawable="@drawable/sun02" android:duration="150" />
+    <item android:drawable="@drawable/sun03" android:duration="150" />
+    <item android:drawable="@drawable/sun04" android:duration="150" />
+    <item android:drawable="@drawable/sun05" android:duration="150" />
+    <item android:drawable="@drawable/sun06" android:duration="150" />
+    <item android:drawable="@drawable/sun07" android:duration="150" />
+    <item android:drawable="@drawable/sun08" android:duration="150" />
+    <item android:drawable="@drawable/sun09" android:duration="150" />
+    <item android:drawable="@drawable/sun10" android:duration="150" />
+    <item android:drawable="@drawable/sun11" android:duration="150" />
+    <item android:drawable="@drawable/sun12" android:duration="150" />
+    <item android:drawable="@drawable/sun13" android:duration="150" />
+    <item android:drawable="@drawable/sun14" android:duration="150" />
+    <item android:drawable="@drawable/sun15" android:duration="150" />
+    <item android:drawable="@drawable/sun16" android:duration="150" />
+    <item android:drawable="@drawable/sun17" android:duration="150" />
+    <item android:drawable="@drawable/sun18" android:duration="150" />
+    <item android:drawable="@drawable/sun19" android:duration="150" />
+    <item android:drawable="@drawable/sun20" android:duration="150" />
+    <item android:drawable="@drawable/sun21" android:duration="150" />
+    <item android:drawable="@drawable/sun22" android:duration="150" />
+    <item android:drawable="@drawable/sun23" android:duration="150" />
+    <item android:drawable="@drawable/sun24" android:duration="150" />
+    <item android:drawable="@drawable/sun25" android:duration="150" />
+    <item android:drawable="@drawable/sun26" android:duration="150" />
+    <item android:drawable="@drawable/sun27" android:duration="150" />
+    <item android:drawable="@drawable/sun28" android:duration="150" />
+    <item android:drawable="@drawable/sun29" android:duration="150" />
+    <item android:drawable="@drawable/sun30" android:duration="150" />
+    <item android:drawable="@drawable/sun31" android:duration="150" />
+    <item android:drawable="@drawable/sun32" android:duration="150" />
+    <item android:drawable="@drawable/sun33" android:duration="150" />
+    <item android:drawable="@drawable/sun34" android:duration="150" />
+    <item android:drawable="@drawable/sun35" android:duration="150" />
+    <item android:drawable="@drawable/sun36" android:duration="150" />
+</animation-list>

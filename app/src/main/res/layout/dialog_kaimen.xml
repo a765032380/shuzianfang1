@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="300dp"
+    android:background="@drawable/a_a_bg_beijing1"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/ll_kaimenchenggong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/a_b_bg_chenggong"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_kaimenchenggong"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/a_b_icon_chengong_1" />
+
+            <TextView
+                android:id="@+id/tv_kaimenchenggong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="开门成功"
+                android:textColor="#004aaf"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="5dp"
+                android:text="此次开门后再次开门需等待60秒，产品经理非要加此功能，他的电话是"
+                android:textColor="#4486e0"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/home_sun"
+                android:layout_width="match_parent"
+                android:layout_height="143dp"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/banner1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kaimenshibai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_kaimentishi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/a_a_icon_shibai" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_kaimentishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开门失败"
+                android:textColor="#004aaf"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="请点击重试或联系客服"
+                android:textColor="#4486e0"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_chongshi"
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/a_a_btn_chongshi"
+                android:gravity="center"
+                android:text="重试"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_lianxikefu"
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/a_a_btn_kefu"
+                android:gravity="center"
+                android:text="联系客服"
+                android:textColor="#0052c1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

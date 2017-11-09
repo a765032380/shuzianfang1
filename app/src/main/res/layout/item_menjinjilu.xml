@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_date_gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+              
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:12:12"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="0.3">
+
+            <ImageView
+                android:id="@+id/iv_menjinjilu_up"
+                android:layout_width="2dp"
+                android:layout_height="28dp"
+                android:background="@drawable/a_bg_theprogressbar" />
+
+            <ImageView
+                android:id="@+id/iv_menjinjilu_date"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/a_icon_time" />
+
+            <ImageView
+                android:id="@+id/iv_menjinjilu_below"
+                android:layout_width="2dp"
+                android:layout_height="28dp"
+                android:background="@drawable/a_bg_theprogressbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+          
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/tv_menjinjilu_date"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="2017-05-05"
+                android:gravity="center"
+                android:background="@drawable/a_btn_time1"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_menjinjilu_xingqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="星期一" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view_gone"
+        android:background="#dddddd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv_menjinjilu_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:12:12"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="0.3">
+
+            <ImageView
+                android:id="@+id/iv_menjinjilu_item_up"
+                android:layout_width="2dp"
+                android:layout_height="37dp"
+                android:background="@drawable/a_bg_theprogressbar" />
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:background="@drawable/a_icon_blue1" />
+
+            <ImageView
+                android:id="@+id/iv_menjinjilu_item_below"
+                android:layout_width="2dp"
+                android:layout_height="36dp"
+                android:background="@drawable/a_bg_theprogressbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/iv_menjinjilu_sex"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/a_icon_display" />
+
+            <com.bjxiyang.shuzianfang.myapplication.view.CircleImageView
+                android:id="@+id/iv_menjinjilu_touxiang"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/c_img_touxiang" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/menjinjilu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textColor="#323232"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/menjinjilu_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_marginTop="5dp"
+                    android:text="地址"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--<ListView-->
+       <!--android:id="@+id/lv_menjinjilu_item"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content"></ListView>-->
+
+</LinearLayout>

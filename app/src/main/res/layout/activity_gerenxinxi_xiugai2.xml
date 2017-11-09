@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFFFFF">
+
+            <RelativeLayout
+                android:id="@+id/iv_gerenxinxi_xiugai_fanhui"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/a_btn_join" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="个人信息"
+                android:textColor="#323232"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f1f1f1"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="用户名"
+            android:textColor="#323232"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_gerenxinxi_xiugai_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好人" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/a_btn_jinru" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#f1f1f1"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_gerenxinxi_xiugai_touxiang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="头像"
+            android:textColor="#323232"
+            android:textSize="15sp"/>
+
+        <com.bjxiyang.shuzianfang.myapplication.view.CircleImageView
+            android:id="@+id/iv_gerenxinxi_xiugai_touxiang"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/a_icon_headportrait" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/a_btn_jinru" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#f1f1f1"
+        android:visibility="visible"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_gerenxinxi_xiugai_realname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="真实姓名"
+            android:textColor="#323232"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_gerenxinxi_xiugai_realname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/a_btn_jinru" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#f1f1f1"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_shimingrenzheng"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="实名认证"
+            android:textColor="#323232"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_shimingrenzhen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请认证" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/a_btn_jinru" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#f1f1f1"
+        android:visibility="gone"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_shoujihao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="手机号"
+            android:textColor="#323232"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请认证" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/a_btn_jinru"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#f1f1f1"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_weixinhao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="微信号"
+            android:textColor="#323232"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_weixinhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未授权" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/a_btn_jinru" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#f1f1f1"
+        android:visibility="gone"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_qq"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="QQ号"
+            android:textColor="#323232"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请填写" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/a_btn_jinru" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#f1f1f1"></View>
+
+</LinearLayout>

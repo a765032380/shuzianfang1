@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ib_fanghui"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/a_btn_join" />
+        </LinearLayout>
+        <!--<com.astuetz.PagerSlidingTabStrip-->
+            <!--android:id="@+id/tabs"-->
+            <!--android:textSize="13sp"-->
+            <!--app:pstsShouldExpand="true"-->
+            <!--app:pstsIndicatorHeight="3dp"-->
+            <!--app:pstsIndicatorColor="#333333"-->
+
+            <!--android:background="#FFFFFF"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="41dp" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_jiaren"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_jairen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="家人"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_line1"
+                    android:layout_width="30dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_zuke"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_zuke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="租客"
+                    android:textColor="#aaaaaa"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/iv_line2"
+                    android:layout_width="30dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#333333" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    
+
+        <RelativeLayout
+            android:id="@+id/ib_tianjia"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="添加"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#f1f1f1"></View>-->
+
+    <com.bjxiyang.shuzianfang.myapplication.view.CustomViewPager
+        android:id="@+id/pager"
+        android:background="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.bjxiyang.shuzianfang.myapplication.view.CustomViewPager>
+
+
+
+</LinearLayout>

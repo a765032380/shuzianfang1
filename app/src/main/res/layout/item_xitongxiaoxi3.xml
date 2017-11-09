@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="42dp"
+            android:layout_height="42dp" 
+            android:background="@drawable/logo"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="安掌门"
+                android:textColor="#323232"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_xitongxiaoxi_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-08-05" 
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_xitongxiaoxi_neirong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="系统提示"
+        android:textColor="#999999"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"/>
+</LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/ll_lijichakan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right|center_vertical"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="立即查看"
+        android:textColor="#4181ff"
+        android:layout_marginRight="5dp"
+        android:textSize="14sp"
+        />
+    <ImageView
+        android:layout_width="6sp"
+        android:layout_height="12sp" 
+        android:background="@drawable/f_a_btn_join"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"></View>
+    </LinearLayout>
+</LinearLayout>
