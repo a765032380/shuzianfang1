@@ -180,12 +180,12 @@ public class XY_AddKeyaccreditActivity extends MySwipeBackActivity implements Vi
                 break;
             //选择
             case R.id.add_select_yezhu:
-                ib_yezhujiashu.setBackgroundResource(R.drawable.k_btn_zhong_pre);
-                ib_zuke.setBackgroundResource(R.drawable.k_btn_zhong_n);
+//                ib_yezhujiashu.setBackgroundResource(R.drawable.k_btn_zhong_pre);
+//                ib_zuke.setBackgroundResource(R.drawable.k_btn_zhong_n);
                 break;
             case R.id.add_select_zuke:
-                ib_zuke.setBackgroundResource(R.drawable.k_btn_zhong_pre);
-                ib_yezhujiashu.setBackgroundResource(R.drawable.k_btn_zhong_n);
+//                ib_zuke.setBackgroundResource(R.drawable.k_btn_zhong_pre);
+//                ib_yezhujiashu.setBackgroundResource(R.drawable.k_btn_zhong_n);
                 break;
             case R.id.select_xiaoqu:
                 getData();

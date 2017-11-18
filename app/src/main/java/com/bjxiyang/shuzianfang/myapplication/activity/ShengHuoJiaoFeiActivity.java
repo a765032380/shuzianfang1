@@ -49,6 +49,8 @@ public class ShengHuoJiaoFeiActivity extends MySwipeBackActivity implements View
     private LinearLayout ll_ranqifei;
     private LinearLayout ll_kuandaifei;
     private LinearLayout ll_wuyefei;
+    private LinearLayout ll_nuanqifei;
+    private LinearLayout ll_youxiandianshi;
     private TextView tv_shopname;
     private RelativeLayout iv_shenghuojiaofei_fanhui;
     @BindView(R.id.ll_weixiufuwu)
@@ -83,6 +85,10 @@ public class ShengHuoJiaoFeiActivity extends MySwipeBackActivity implements View
         ll_ranqifei= (LinearLayout) findViewById(R.id.ll_ranqifei);
         ll_kuandaifei= (LinearLayout) findViewById(R.id.ll_kuandaifei);
         ll_wuyefei= (LinearLayout) findViewById(R.id.ll_wuyefei);
+        ll_nuanqifei= (LinearLayout) findViewById(R.id.ll_nuanqifei);
+        ll_youxiandianshi= (LinearLayout) findViewById(R.id.ll_youxiandianshi);
+        ll_youxiandianshi.setOnClickListener(this);
+        ll_nuanqifei.setOnClickListener(this);
         iv_shenghuojiaofei_fanhui.setOnClickListener(this);
 //        ll_address.setOnClickListener(this);
         ll_shuifei.setOnClickListener(this);
@@ -240,6 +246,12 @@ public class ShengHuoJiaoFeiActivity extends MySwipeBackActivity implements View
             case R.id.rl_jilu:
                 MyUntil.mStartActivity(ShengHuoJiaoFeiActivity.this,LiShiJiLuActivty.class);
 
+                break;
+            case R.id.ll_nuanqifei:
+                startAli();
+                break;
+            case R.id.ll_youxiandianshi:
+                startAli();
                 break;
 
 

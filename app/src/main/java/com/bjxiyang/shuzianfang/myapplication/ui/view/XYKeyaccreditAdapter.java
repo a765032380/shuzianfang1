@@ -26,6 +26,7 @@ import com.bjxiyang.shuzianfang.myapplication.view.CircleImageView;
 import com.bjxiyang.shuzianfang.myapplication.view.MyDialog;
 import com.bjxiyang.shuzianfang.myapplication.view.SwipeListLayout;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -38,7 +39,7 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
     private ImageLoaderManager manager;
     private Context mContext;
     private List<PermissionList.Obj> mList;
-
+    HashMap<Integer, View> lmap = new HashMap<Integer, View>();
     private int communityId;
     private int nperId;
     private int floorId;
@@ -55,7 +56,7 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
     private TextView tv_delete;
     private SwipeListLayout sll_main;
     private int c_memberId = Integer.parseInt(SPManager.getInstance().getString("c_memberId",""));
-    public XYKeyaccreditAdapter(Context mContext, List mList) {
+    public  XYKeyaccreditAdapter(Context mContext, List mList) {
         this.mContext = mContext;
         this.mList = mList;
     }
@@ -79,7 +80,7 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
     public View getView(final int position, View view, ViewGroup parent) {
 
         viewholder=null;
-        if (view==null){
+        if (lmap.get(position) ==null){
             viewholder=new Viewholder();
             view= LayoutInflater.from(mContext).inflate(R.layout.xy_item_keyaccredit3,null);
             viewholder.iv_touxiang= (CircleImageView) view.findViewById(R.id.iv_touxiang);
@@ -87,18 +88,21 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
             viewholder.iv_zukejiaren= (TextView) view.findViewById(R.id.iv_zukejiaren);
             viewholder.item_address= (TextView) view.findViewById(R.id.item_address);
             viewholder.iv_startusing= (ImageView) view.findViewById(R.id.iv_startusing);
-//            viewholder.item_date= (TextView) view.findViewById(R.id.item_date);
             viewholder.ib_jinyong_qiyong= (TextView) view.findViewById(R.id.ib_jinyong_qiyong);
             viewholder.tv_zhuangtai= (TextView) view.findViewById(R.id.tv_zhuangtai);
             sll_main= (SwipeListLayout) view.findViewById(R.id.sll_main);
             tv_delete = (TextView) view.findViewById(R.id.tv_delete);
             sll_main.setOnSwipeStatusListener(new MyOnSlipStatusListener(sll_main));
-//            viewholder.item_xiugai= (TextView) view.findViewById(R.id.item_xiugai);
             view.setTag(viewholder);
+            lmap.put(position,view);
         }else {
+            view = lmap.get(position);
             viewholder= (Viewholder) view.getTag();
         }
         manager= ImageLoaderManager.getInstance(mContext);
+
+        obj=mList.get(position);
+
         //图像处理直接用框架
         //文本处理直接拿服务器数据
         //设置头像 地址为null
@@ -108,6 +112,34 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
         }
 
         viewholder.name.setText(mList.get(position).getNickName());
+        viewholder.item_address.setText(obj.getCommunityName()+(obj.getNperName())+"-"+obj.getFloorName()
+                +"号楼-"+obj.getUnitName()+"单元-"+obj.getDoorName()+"室");
+        switch (mList.get(position).getRoleType()){
+            //业主类型
+            case UserType.USER_OWNER:
+                showYeZhu(viewholder);
+                break;
+                //租户类型
+            case UserType.USER_LESSEE:
+                showZuHu(viewholder);
+                break;
+                //业主家人类型
+            case UserType.USER_FOLK:
+                showJiaRen(viewholder);
+
+                break;
+                //租户家人类型
+            case UserType.USER_LESSEE_HOME:
+                showZuHuJiaRen(viewholder);
+
+                break;
+
+
+        }
+
+
+        delete(position);
+
 
 //            if (mList.get(position).getC_memberId()==c_memberId){
 //                    activeUser=mList.get(position).getRoleType();
@@ -118,56 +150,52 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
 //                    viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
 //                }
 //            }
-            if (mList.get(position).getRoleType()!=UserType.USER_OWNER
-                    &&mList.get(position).getC_memberId()!=c_memberId){
-                viewholder.ib_jinyong_qiyong.setVisibility(View.VISIBLE);
-            }else {
-                viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
-            }
-//            else {
+//            if (mList.get(position).getRoleType()!=UserType.USER_OWNER
+//                    &&mList.get(position).getC_memberId()!=c_memberId){
+//                viewholder.ib_jinyong_qiyong.setVisibility(View.VISIBLE);
+//            }else {
 //                viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
 //            }
-            if (mList.get(position).getRoleType()==(UserType.USER_FOLK)){
-//                viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
-                //如果是家人类型，就显示家人类型的图片
-                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxiang);
-                viewholder.iv_zukejiaren.setText("业主");
-            }else if (mList.get(position).getRoleType()==(UserType.USER_OWNER)) {
-                if (mList.get(position).getStatus()== UserState.START_USING){
-//                    viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
-                }else {
-//                    viewholder.ib_jinyong_qiyong.setVisibility(View.INVISIBLE);
-                }
-
-                //如果是业主类型，就显示业主类型的图片
-                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxiang);
-                viewholder.iv_zukejiaren.setText("业主");
-            }else if (mList.get(position).getRoleType()==(UserType.USER_LESSEE)){
-                //否则就是租客类型的
-                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxaing3);
-                viewholder.iv_zukejiaren.setText("租客");
-                if (mList.get(position).getC_memberId()!= Integer.valueOf(SPManager.getInstance().getString("c_memberId",""))){
-
-//                    viewholder.ib_jinyong_qiyong.setVisibility(View.VISIBLE);
-//                    viewholder.item_xiugai.setVisibility(View.VISIBLE);
-                }else {
-//                    viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
-//                    viewholder.item_xiugai.setVisibility(View.GONE);
-                }
-
-
-            }else if(mList.get(position).getRoleType()==(UserType.USER_LESSEE_HOME)){
-//                viewholder.ib_jinyong_qiyong.setVisibility(View.VISIBLE);
-//                viewholder.item_xiugai.setVisibility(View.VISIBLE);
-                //否则就是租客家人
-                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxaing3);
-                viewholder.iv_zukejiaren.setText("租客");
-//                viewholder.iv_zukejiaren.setText("租户家人");
-            }
-            obj=mList.get(position);
-            viewholder.item_address.setText(obj.getCommunityName()+(obj.getNperName())+"-"+obj.getFloorName()
-                    +"号楼-"+obj.getUnitName()+"单元-"+obj.getDoorName()+"室");
-//            viewholder.item_date.setText(obj.getAdd_time());
+////            else {
+////                viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
+////            }
+//            if (mList.get(position).getRoleType()==(UserType.USER_FOLK)){
+////                viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
+//                //如果是家人类型，就显示家人类型的图片
+//                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxiang);
+//                viewholder.iv_zukejiaren.setText("业主");
+//            }else if (mList.get(position).getRoleType()==(UserType.USER_OWNER)) {
+//                if (mList.get(position).getStatus()== UserState.START_USING){
+////                    viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
+//                }else {
+////                    viewholder.ib_jinyong_qiyong.setVisibility(View.INVISIBLE);
+//                }
+//
+//                //如果是业主类型，就显示业主类型的图片
+//                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxiang);
+//                viewholder.iv_zukejiaren.setText("业主");
+//            }else if (mList.get(position).getRoleType()==(UserType.USER_LESSEE)){
+//                //否则就是租客类型的
+//                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxaing3);
+//                viewholder.iv_zukejiaren.setText("租客");
+//                if (mList.get(position).getC_memberId()!= Integer.valueOf(SPManager.getInstance().getString("c_memberId",""))){
+//
+////                    viewholder.ib_jinyong_qiyong.setVisibility(View.VISIBLE);
+////                    viewholder.item_xiugai.setVisibility(View.VISIBLE);
+//                }else {
+////                    viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
+////                    viewholder.item_xiugai.setVisibility(View.GONE);
+//                }
+//
+//
+//            }else if(mList.get(position).getRoleType()==(UserType.USER_LESSEE_HOME)){
+////                viewholder.ib_jinyong_qiyong.setVisibility(View.VISIBLE);
+////                viewholder.item_xiugai.setVisibility(View.VISIBLE);
+//                //否则就是租客家人
+//                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxaing3);
+//                viewholder.iv_zukejiaren.setText("租客");
+////                viewholder.iv_zukejiaren.setText("租户家人");
+//
 
         if (obj.getStatus()== UserState.FORBIDDEN){
             viewholder.ib_jinyong_qiyong.setBackgroundResource(R.drawable.a_btn_startusing);
@@ -255,7 +283,7 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
 
             }
         });
-        delete(position1);
+
 //        viewholder.item_xiugai.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -295,6 +323,22 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
 //            }
 //        });
         return view;
+    }
+    private void showYeZhu(Viewholder viewholder){
+        viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxiang);
+        viewholder.iv_zukejiaren.setText("业主");
+    }
+    private void showZuHu(Viewholder viewholder){
+        viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxaing3);
+        viewholder.iv_zukejiaren.setText("租客");
+    }
+    private void showZuHuJiaRen(Viewholder viewholder){
+        viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxaing3);
+        viewholder.iv_zukejiaren.setText("租客");
+    }
+    private void showJiaRen(Viewholder viewholder){
+        viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxiang);
+        viewholder.iv_zukejiaren.setText("业主家人");
     }
 
     private class Viewholder{

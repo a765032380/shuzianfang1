@@ -56,9 +56,13 @@ public class JiaRenFragment extends Fragment implements View.OnClickListener,Swi
     }
 
 
-
-
-
+    @Override
+    public void onResume() {
+        super.onResume();
+        initUI();
+        initData();
+        getData();
+    }
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view=View.inflate(getContext(), R.layout.xy_fragment_jiaren3,null);

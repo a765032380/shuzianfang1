@@ -175,9 +175,9 @@ public class GeRenZhongXinActivity extends MySwipeBackActivity implements View.O
         setupService();
     }
     private void setupService() {
-//        Intent intent = new Intent(this, StepService.class);
-//        bindService(intent, conn, Context.BIND_AUTO_CREATE);
-//        startService(intent);
+        Intent intent = new Intent(this, StepService.class);
+        bindService(intent, conn, Context.BIND_AUTO_CREATE);
+        startService(intent);
     }
 
     //设置红点

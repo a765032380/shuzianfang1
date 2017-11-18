@@ -14,6 +14,7 @@ import com.bjxiyang.shuzianfang.R;
 import com.bjxiyang.shuzianfang.myapplication.model.OpenDoorList;
 import com.bjxiyang.shuzianfang.myapplication.view.CircleImageView;
 
+import java.util.HashMap;
 import java.util.List;
 
 import butterknife.BindView;
@@ -27,7 +28,7 @@ public class XYMenJinJiLuAdapter extends BaseAdapter {
     private Context mContext;
     private List<OpenDoorList.Obj> list;
     private String date_date;
-
+    HashMap<Integer, View> lmap = new HashMap<Integer, View>();
     public XYMenJinJiLuAdapter(Context mContext, List<OpenDoorList.Obj> list) {
         this.mContext = mContext;
         this.list = list;
@@ -56,7 +57,7 @@ public class XYMenJinJiLuAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         ViewHolder viewHolder=null;
-        if (view==null){
+        if (lmap.get(position) ==null){
             view= LayoutInflater.from(mContext).inflate(R.layout.item_menjinjilu,null);
             viewHolder=new ViewHolder(view);
 //            viewHolder.menjinjilu_name= (TextView) view.findViewById(R.id.menjinjilu_name);
@@ -64,7 +65,9 @@ public class XYMenJinJiLuAdapter extends BaseAdapter {
 //            viewHolder.menjinjilu_date= (TextView) view.findViewById(R.id.menjinjilu_date);
 //            viewHolder.im_menjinjilu= (ImageView) view.findViewById(R.id.im_menjinjilu);
             view.setTag(viewHolder);
+            lmap.put(position,view);
         }else {
+            view = lmap.get(position);
             viewHolder= (ViewHolder) view.getTag();
         }
 

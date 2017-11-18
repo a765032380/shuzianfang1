@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.bjxiyang.shuzianfang.myapplication.ui.activity.HomeActivity;
 
@@ -112,6 +113,8 @@ public class MyReceiver extends BroadcastReceiver {
 //			Toast.makeText(context,extras,Toast.LENGTH_LONG).show();
 			msgIntent.putExtra(HomeActivity.KEY_MESSAGE, message);
 			msgIntent.putExtra(HomeActivity.KEY_EXTRAS, extras);
+			Log.i("LLLL",message);
+			Log.i("LLLL",extras);
 //			if (!ExampleUtil.isEmpty(extras)) {
 //				try {
 //					JSONObject extraJson = new JSONObject(extras);
