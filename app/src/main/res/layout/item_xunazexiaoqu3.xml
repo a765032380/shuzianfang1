@@ -29,7 +29,6 @@
                 android:text="姓名" />
 
             <ImageView
-                android:id="@+id/imageView13"
                 android:layout_width="1dp"
                 android:layout_height="15dp"
                 android:layout_marginLeft="5dp"

@@ -99,7 +99,6 @@
                 android:layout_marginTop="80dp"
                 android:background="@drawable/d_icon_wanluoyichang" />
             <TextView
-                android:id="@+id/tv_wuwangluo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="网络异常，请检查网络"
@@ -124,7 +123,6 @@
                 android:layout_marginTop="80dp"
                 android:background="@drawable/c_icon_wujilu" />
             <TextView
-                android:id="@+id/tv_wujilu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="当前无记录"

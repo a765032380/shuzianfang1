@@ -105,8 +105,8 @@ public class TaRenHuiFuFragment extends Fragment implements SwipeRefreshLayout.O
 
             GongGao.Obj obj=new GongGao.Obj();
             obj.setAddTime(mList2.get(position).getAddTime());
-            obj.setContent(mList2.get(position).getMsgContent());
-            obj.setTitle(mList2.get(position).getMsgType());
+//            obj.setContent(mList2.get(position).getMsgContent());
+//            obj.setTitle(mList2.get(position).getMsgType());
 
 
         Intent intent=new Intent(getContext(), XiaoQuGongGaoXiangQingActivity.class);

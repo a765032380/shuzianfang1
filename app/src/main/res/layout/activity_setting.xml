@@ -35,7 +35,6 @@
             android:gravity="center" />
 
         <RelativeLayout
-            android:id="@+id/rl_username_save"
             android:layout_width="0dp"
             android:layout_gravity="center"
             android:layout_weight="1.4"
@@ -81,7 +80,6 @@
             android:gravity="center_vertical|right">
 
             <TextView
-                android:id="@+id/tv_huancun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="空"

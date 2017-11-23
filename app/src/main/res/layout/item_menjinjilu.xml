@@ -40,13 +40,11 @@
                 android:background="@drawable/a_bg_theprogressbar" />
 
             <ImageView
-                android:id="@+id/iv_menjinjilu_date"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:background="@drawable/a_icon_time" />
 
             <ImageView
-                android:id="@+id/iv_menjinjilu_below"
                 android:layout_width="2dp"
                 android:layout_height="28dp"
                 android:background="@drawable/a_bg_theprogressbar" />
@@ -115,7 +113,6 @@
             android:layout_weight="0.3">
 
             <ImageView
-                android:id="@+id/iv_menjinjilu_item_up"
                 android:layout_width="2dp"
                 android:layout_height="37dp"
                 android:background="@drawable/a_bg_theprogressbar" />
@@ -126,7 +123,6 @@
                 android:background="@drawable/a_icon_blue1" />
 
             <ImageView
-                android:id="@+id/iv_menjinjilu_item_below"
                 android:layout_width="2dp"
                 android:layout_height="36dp"
                 android:background="@drawable/a_bg_theprogressbar" />
@@ -140,7 +136,6 @@
             android:layout_weight="3">
 
             <ImageView
-                android:id="@+id/iv_menjinjilu_sex"
                 android:layout_width="5dp"
                 android:layout_height="5dp"
                 android:layout_marginLeft="5dp"

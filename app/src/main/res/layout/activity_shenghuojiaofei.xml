@@ -289,7 +289,6 @@
             android:background="@drawable/b_a_icon_weixui" />
 
         <TextView
-            android:id="@+id/tv_weixiufuwu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp10"
@@ -326,7 +325,6 @@
             android:background="@drawable/b_a_icon_jianyi" />
 
         <TextView
-            android:id="@+id/tv_tousujianyi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp10"

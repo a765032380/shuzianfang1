@@ -17,7 +17,6 @@
             >
 
             <ImageView
-                android:id="@+id/imageView4"
                 android:layout_width="10dp"
                 android:layout_height="18dp"
                 android:layout_centerHorizontal="true"
@@ -80,7 +79,6 @@
                 android:text="选择小区" />
 
             <ImageButton
-                android:id="@+id/ib_tianjianshouquan"
                 android:layout_width="10dp"
                 android:layout_height="20dp"
                 android:background="@drawable/f_btn_jinru" />

@@ -161,7 +161,7 @@ public class SDLogin2Activity extends BeasActivity {
     private void initView()
     {
         input_user_name_login_editview = (EditText) findViewById(R.id.et_login_username);
-        input_user_password_login_editview = (EditText) findViewById(R.id.et_login_pwd);
+//        input_user_password_login_editview = (EditText) findViewById(R.id.et_login_pwd);
         wx= (Button) findViewById(R.id.bt_weixindenglu);
         wx.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,8 +183,8 @@ public class SDLogin2Activity extends BeasActivity {
                 input_user_name_login_editview.setText("");
             }
         });
-        point_login = (ImageView)findViewById(R.id.selected_menu_login);
-        point_regiest = (ImageView) findViewById(R.id.selected_menu_regiest);
+//        point_login = (ImageView)findViewById(R.id.selected_menu_login);
+//        point_regiest = (ImageView) findViewById(R.id.selected_menu_regiest);
 
 
         //记住密码的选择框
@@ -462,7 +462,7 @@ public class SDLogin2Activity extends BeasActivity {
 //            }
 //        });
 
-        loginView = (LinearLayout) findViewById(R.id.loginView);
+//        loginView = (LinearLayout) findViewById(R.id.loginView);
         //布局的控制
         regiestView = (LinearLayout)findViewById(R.id.registerView);
 

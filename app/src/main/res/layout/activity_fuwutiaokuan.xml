@@ -18,7 +18,6 @@
             android:background="#4183FF">
 
             <RelativeLayout
-                android:id="@+id/rl_fuwutiaokuan_fanhui"
                 android:layout_width="40dp"
                 android:layout_height="64dp">
 
@@ -51,7 +50,6 @@
         android:layout_marginTop="5dp">
 
         <LinearLayout
-            android:id="@+id/ll_xuanzexiaoqu1_cance"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center_vertical"
@@ -64,7 +62,6 @@
                 android:gravity="left|center_vertical">
 
                 <TextView
-                    android:id="@+id/tv_xuanzexiaoqu1_cance"
                     android:layout_width="10dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="13dp"
@@ -99,7 +96,6 @@
 
 
     <ScrollView
-        android:id="@+id/sv_fuwutiaokuan_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="15dp"

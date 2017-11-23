@@ -49,7 +49,6 @@
             android:textColor="#323232"
             android:textSize="16sp" />
         <RelativeLayout
-            android:id="@+id/rl_username_save"
             android:layout_width="0dp"
             android:layout_gravity="center"
             android:layout_weight="1.4"

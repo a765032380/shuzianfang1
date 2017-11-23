@@ -188,7 +188,6 @@
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/tv_shimingrenzhen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="请认证" />
@@ -210,7 +209,6 @@
         android:visibility="gone"></View>
 
     <LinearLayout
-        android:id="@+id/ll_shoujihao"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="15dp"
@@ -308,7 +306,6 @@
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/tv_qq"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="请填写" />

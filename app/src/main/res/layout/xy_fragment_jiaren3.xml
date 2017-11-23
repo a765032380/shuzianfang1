@@ -34,7 +34,6 @@
                 android:background="@drawable/b_icon_wushouquan" />
 
             <TextView
-                android:id="@+id/tv_wushouquan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="当前无授权"
@@ -61,7 +60,6 @@
                 android:background="@drawable/d_icon_wanluoyichang" />
 
             <TextView
-                android:id="@+id/tv_wuwangluo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="网络异常，请检查网络"

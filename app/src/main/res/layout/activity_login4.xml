@@ -67,7 +67,6 @@
                     android:orientation="horizontal"
                     android:gravity="center">
                 <ImageView
-                    android:id="@+id/iv_deletephone"
                     android:gravity="center"
                     android:layout_width="8dp"
                     android:layout_height="8dp"
@@ -128,7 +127,6 @@
                     android:textSize="12sp" />
 
                 <LinearLayout
-                    android:id="@+id/ll_get_smscodeagain"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/d_btn_chonghuoyanzhengma"
@@ -145,7 +143,6 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/tv_chongfayanzhengma"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="50s"
@@ -187,7 +184,6 @@
                 android:background="@drawable/d_btn_weixin" />
 
             <LinearLayout
-                android:id="@+id/ll_yonghuxieyi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"

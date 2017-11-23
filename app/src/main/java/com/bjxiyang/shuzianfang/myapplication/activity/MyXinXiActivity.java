@@ -125,12 +125,12 @@ public class MyXinXiActivity extends SwipeBackActivity implements View.OnClickLi
         ll_qq.setOnClickListener(this);
         ll_username= (LinearLayout) findViewById(R.id.ll_username);
         ll_gerenxinxi_xiugai_touxiang= (LinearLayout) findViewById(R.id.ll_gerenxinxi_xiugai_touxiang);
-        ll_gerenxinxi_xiugai_sex= (LinearLayout) findViewById(R.id.ll_gerenxinxi_xiugai_sex);
+//        ll_gerenxinxi_xiugai_sex= (LinearLayout) findViewById(R.id.ll_gerenxinxi_xiugai_sex);
         ll_username.setOnClickListener(this);
         ll_gerenxinxi_xiugai_touxiang.setOnClickListener(this);
         iv_gerenxinxi_xiugai_touxiang= (CircleImageView) findViewById(R.id.iv_gerenxinxi_xiugai_touxiang);
         tv_gerenxinxi_xiugai_name= (TextView) findViewById(R.id.tv_gerenxinxi_xiugai_name);
-        tv_gerenxinxi_xiugai_sex=(TextView) findViewById(R.id.tv_gerenxinxi_xiugai_sex);
+//        tv_gerenxinxi_xiugai_sex=(TextView) findViewById(R.id.tv_gerenxinxi_xiugai_sex);
         iv_gerenxinxi_xiugai_fanhui= (RelativeLayout) findViewById(R.id.iv_gerenxinxi_xiugai_fanhui);
         iv_gerenxinxi_xiugai_fanhui.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -301,7 +301,6 @@
                 android:layout_marginTop="8dp">
 
                 <ImageView
-                    android:id="@+id/imageView4"
                     android:layout_width="10dp"
                     android:layout_height="18dp"
                     android:layout_centerHorizontal="true"
@@ -365,7 +364,6 @@
                     android:textSize="13sp" />
 
                 <ImageButton
-                    android:id="@+id/ib_tianjianshouquan"
                     android:layout_width="7dp"
                     android:layout_height="15dp"
                     android:background="@drawable/f_btn_jinru" />

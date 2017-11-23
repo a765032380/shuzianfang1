@@ -22,14 +22,12 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/iv_kaimenchenggong"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="25dp"
                 android:background="@drawable/a_b_icon_chengong_1" />
 
             <TextView
-                android:id="@+id/tv_kaimenchenggong"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -75,7 +73,6 @@
         >
 
         <ImageView
-            android:id="@+id/iv_kaimentishi"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginLeft="25dp"
@@ -90,7 +87,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_kaimentishi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="开门失败"
