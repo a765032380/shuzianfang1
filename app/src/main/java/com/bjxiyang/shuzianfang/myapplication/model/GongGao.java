@@ -9,21 +9,22 @@ import java.util.List;
 
 public class GongGao implements Serializable {
 
+
     /**
      * code : 1000
-     * msg : 获取小区列表成功
-     * obj : [{"noticer":"是豆腐干士大夫敢死队风格的","addTime":"2017-06-18 10:25:36","title":"撒地方撒旦飞洒的","type":0,"noticeId":8,"content":"撒旦飞洒的发射点发射点发射点发"},{"noticer":"撒旦飞洒的","addTime":"2017-06-18 09:25:36","title":"阿斯蒂芬撒旦发射点发","type":1,"noticeId":7,"content":"是打发士大夫撒旦发生发射点发射点"},{"noticer":"北京德胜物业公司","addTime":"2017-06-18 08:25:36","title":"缴纳物业费通知","type":1,"noticeId":4,"content":"撒旦飞洒地方撒打发士大夫撒旦发生大单反"},{"noticer":"北京德胜","addTime":"2017-06-18 08:25:36","title":"撒旦发顺丰","type":0,"noticeId":5,"content":"孙大发孙大发孙大发"},{"noticer":"啊士大夫但是","addTime":"2017-06-18 08:25:36","title":"士大夫撒旦发","type":1,"noticeId":6,"content":"士大夫撒旦发射点发射点"}]
+     * msg : 获取消息列表成功
+     * obj : [{"userId":89,"msgContent":"亲爱的用户您好，您的房屋有租客需要您授权开通门禁，请前往钥匙授权列表进行授权","msgType":"开通授权","contentId":"0","addTime":"2017-11-23 10:05:13"},{"userId":89,"msgContent":"亲爱的用户您好，您的房屋有租客需要您授权开通门禁，请前往钥匙授权列表进行授权","msgType":"开通授权","contentId":"0","addTime":"2017-11-22 18:39:48"},{"userId":89,"msgContent":"亲爱的用户您好，您的房屋有租客需要您授权开通门禁，请前往钥匙授权列表进行授权","msgType":"开通授权","contentId":"0","addTime":"2017-11-22 18:02:39"},{"userId":89,"msgContent":"您发起的活动已有人加入，请在\u201c街坊儿\u201d中与朋友们规划行程吧！","msgType":"活动反馈","contentId":"65","addTime":"2017-08-25 15:11:45"},{"userId":89,"msgContent":"您发起的活动已有人加入，请在\u201c街坊儿\u201d中与朋友们规划行程吧！","msgType":"活动反馈","contentId":"65","addTime":"2017-08-25 14:50:58"}]
      */
 
-    private String code;
+    private int code;
     private String msg;
     private List<Obj> obj;
 
-    public String getCode() {
+    public int getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(int code) {
         this.code = code;
     }
 
@@ -45,27 +46,49 @@ public class GongGao implements Serializable {
 
     public static class Obj implements Serializable {
         /**
-         * noticer : 是豆腐干士大夫敢死队风格的
-         * addTime : 2017-06-18 10:25:36
-         * title : 撒地方撒旦飞洒的
-         * type : 0
-         * noticeId : 8
-         * content : 撒旦飞洒的发射点发射点发射点发
+         * userId : 89
+         * msgContent : 亲爱的用户您好，您的房屋有租客需要您授权开通门禁，请前往钥匙授权列表进行授权
+         * msgType : 开通授权
+         * contentId : 0
+         * addTime : 2017-11-23 10:05:13
          */
 
-        private String noticer;
+        private int userId;
+        private String msgContent;
+        private String msgType;
+        private String contentId;
         private String addTime;
-        private String title;
-        private int type;
-        private int noticeId;
-        private String content;
 
-        public String getNoticer() {
-            return noticer;
+        public int getUserId() {
+            return userId;
         }
 
-        public void setNoticer(String noticer) {
-            this.noticer = noticer;
+        public void setUserId(int userId) {
+            this.userId = userId;
+        }
+
+        public String getMsgContent() {
+            return msgContent;
+        }
+
+        public void setMsgContent(String msgContent) {
+            this.msgContent = msgContent;
+        }
+
+        public String getMsgType() {
+            return msgType;
+        }
+
+        public void setMsgType(String msgType) {
+            this.msgType = msgType;
+        }
+
+        public String getContentId() {
+            return contentId;
+        }
+
+        public void setContentId(String contentId) {
+            this.contentId = contentId;
         }
 
         public String getAddTime() {
@@ -74,38 +97,6 @@ public class GongGao implements Serializable {
 
         public void setAddTime(String addTime) {
             this.addTime = addTime;
-        }
-
-        public String getTitle() {
-            return title;
-        }
-
-        public void setTitle(String title) {
-            this.title = title;
-        }
-
-        public int getType() {
-            return type;
-        }
-
-        public void setType(int type) {
-            this.type = type;
-        }
-
-        public int getNoticeId() {
-            return noticeId;
-        }
-
-        public void setNoticeId(int noticeId) {
-            this.noticeId = noticeId;
-        }
-
-        public String getContent() {
-            return content;
-        }
-
-        public void setContent(String content) {
-            this.content = content;
         }
     }
 }

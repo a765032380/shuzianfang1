@@ -1,5 +1,13 @@
 [
     {
+        "merged": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_slide_in.xml",
+        "source": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_slide_in.xml"
+    },
+    {
+        "merged": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_edit_screeshot_fadeout.xml",
+        "source": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_edit_screeshot_fadeout.xml"
+    },
+    {
         "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_edit_screeshot_fadein.xml",
         "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_edit_screeshot_fadein.xml"
     },
@@ -16,12 +24,28 @@
         "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_slide_out.xml"
     },
     {
+        "merged": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_forgot_passcode_out.xml",
+        "source": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_forgot_passcode_out.xml"
+    },
+    {
+        "merged": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_login_fadeout.xml",
+        "source": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_login_fadeout.xml"
+    },
+    {
         "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_login_fadeout.xml",
         "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_login_fadeout.xml"
     },
     {
+        "merged": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_edit_screeshot_fadein.xml",
+        "source": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_edit_screeshot_fadein.xml"
+    },
+    {
         "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_login_fadein.xml",
         "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_login_fadein.xml"
+    },
+    {
+        "merged": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_login_fadein.xml",
+        "source": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_login_fadein.xml"
     },
     {
         "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_forgot_passcode_out.xml",
@@ -30,5 +54,13 @@
     {
         "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_forgot_passcode_in.xml",
         "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_forgot_passcode_in.xml"
+    },
+    {
+        "merged": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_forgot_passcode_in.xml",
+        "source": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_forgot_passcode_in.xml"
+    },
+    {
+        "merged": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/anim/qamaster_slide_out.xml",
+        "source": "/Users/gll/Desktop/shuzianfang2/qAMasterSDK/build/intermediates/bundles/debug/res/anim/qamaster_slide_out.xml"
     }
 ]

@@ -36,6 +36,8 @@ public class KaiMenDialog extends Dialog {
     ImageView home_sun;
     @BindView(R.id.ll_kaimenshibai)
     LinearLayout ll_kaimenshibai;
+    @BindView(R.id.id_tishi)
+    TextView id_tishi;
 
     private OnChongShiListener onChongShiListener;
     private int type;

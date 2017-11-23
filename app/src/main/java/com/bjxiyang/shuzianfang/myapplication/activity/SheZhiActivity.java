@@ -174,7 +174,7 @@ public class SheZhiActivity extends MySwipeBackActivity implements View.OnClickL
 
                 AlertDialog.Builder builder=new AlertDialog.Builder(SheZhiActivity.this);
                 AlertDialog dialog=builder
-                        .setIcon(R.mipmap.ic_launcher)
+                        .setIcon(R.mipmap.app_logo)
                         .setTitle("检查更新")
                         .setMessage("网络连接失败")
                         .setPositiveButton("确定", null)

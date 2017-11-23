@@ -90,10 +90,19 @@
             tools:replace="android:value"
             android:value="cac0b4f5b0866a9844581c66" />
 
-        <activity android:name="com.bjxiyang.shuzianfang.myapplication.welcome.Welcome">
+        <activity android:name="com.bjxiyang.shuzianfang.myapplication.welcome.Welcome"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+            <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+                　　　　　　<category android:name="android.intent.category.DEFAULT" />
+                　　　　　　<category android:name="android.intent.category.BROWSABLE" />
+                　　　　　　<data android:host="shuzianfang"
+                                android:scheme="android" />
             </intent-filter>
         </activity>
         <service

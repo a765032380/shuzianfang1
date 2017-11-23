@@ -396,7 +396,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/banner1">
+                        android:src="@drawable/banner1"
+                        android:visibility="invisible">
 
                     </com.bjxiyang.shuzianfang.myapplication.view.RoundByXfermode>
                 </LinearLayout>

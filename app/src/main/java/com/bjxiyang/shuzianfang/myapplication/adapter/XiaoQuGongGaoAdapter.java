@@ -63,12 +63,12 @@ public class XiaoQuGongGaoAdapter extends BaseAdapter {
         }
         viewHolder.tv_item_xiaoqugonggao_date.setText(mList.get(position).getAddTime());
 //        viewHolder.tv_item_xiaoqugonggao_time.setText(mList.get(position).getTime());
-        viewHolder.tv_item_xiaoqugonggao_title.setText(mList.get(position).getTitle());
-        viewHolder.tv_item_xiaoqugonggao_wuyeguanlichu.setText(mList.get(position).getNoticer());
-        viewHolder.tv_item_xiaoqugonggao_itmexiangqing.setText(mList.get(position).getContent());
-        if (mList.get(position).getType()==0){
-            viewHolder.iv_item_xiaoqugonggao_jinji.setVisibility(View.GONE);
-        }
+        viewHolder.tv_item_xiaoqugonggao_title.setText(mList.get(position).getMsgType());
+//        viewHolder.tv_item_xiaoqugonggao_wuyeguanlichu.setText(mList.get(position).getNoticer());
+        viewHolder.tv_item_xiaoqugonggao_itmexiangqing.setText(mList.get(position).getMsgContent());
+//        if (mList.get(position).getType()==0){
+//            viewHolder.iv_item_xiaoqugonggao_jinji.setVisibility(View.GONE);
+//        }
         return view;
     }
 

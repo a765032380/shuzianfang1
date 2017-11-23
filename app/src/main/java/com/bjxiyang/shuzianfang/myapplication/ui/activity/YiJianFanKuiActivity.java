@@ -214,6 +214,10 @@ public class YiJianFanKuiActivity extends MySwipeBackActivity implements View.On
             case R.id.iv_yijianfankui_tijiaofankui:
                 yijian= String.valueOf(et_fankuiyijian.getText());
                 phone= String.valueOf(et_fankuiyijian_lianxifangshi.getText());
+                if (yijian.length()>0){
+                    MyUntil.show(YiJianFanKuiActivity.this,"请输入您的意见");
+                    return;
+                }
 
                 DialogUntil.showLoadingDialog(this,"正在提交",false);
 //                if(imageList.size()>0){

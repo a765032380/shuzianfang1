@@ -86,7 +86,7 @@ public class RequestCenter {
      */
     public static void checkVersion(DisposeDataListener listener) {
         RequestCenter.postRequest(XY_Response.URL_UPDATEVERSION +"cmemberId="+
-                        SPManager.getInstance().getString("c_memberId",""),
+                        SPManager.getInstance().getString("c_memberId","")+"&vertype=3",
                 null, listener, UpdateVersion.class);
     }
 

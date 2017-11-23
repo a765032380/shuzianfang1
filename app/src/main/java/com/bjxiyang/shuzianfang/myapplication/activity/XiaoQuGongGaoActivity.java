@@ -87,7 +87,7 @@ public class XiaoQuGongGaoActivity extends MySwipeBackActivity
             public void onSuccess(Object responseObj) {
                 DialogUntil.closeLoadingDialog();
                 GongGao gongGao= (GongGao) responseObj;
-                if (gongGao.getCode().equals("1000")){
+                if (gongGao.getCode()==1000){
                     mList=gongGao.getObj();
                     if (mList.size()>0){
                         adapter=new XiaoQuGongGaoAdapter(XiaoQuGongGaoActivity.this,mList);

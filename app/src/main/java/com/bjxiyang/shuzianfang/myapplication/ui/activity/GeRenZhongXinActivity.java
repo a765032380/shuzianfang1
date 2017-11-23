@@ -298,7 +298,7 @@ public class GeRenZhongXinActivity extends MySwipeBackActivity implements View.O
                 startIntent(ShengHuoJiaoFeiActivity.class);
                 break;
             case R.id.ll_yaoqinghaoyou:
-                shareToWeChatWithWebpage(GeRenZhongXinActivity.this,"http://www.bjxiyang.com/share/","测试","我是测试数据",SendMessageToWX.Req.WXSceneSession);
+                shareToWeChatWithWebpage(GeRenZhongXinActivity.this,"http://www.bjxiyang.com/share/","邀请好友","我是测试数据",SendMessageToWX.Req.WXSceneSession);
                 break;
         }
     }
@@ -478,7 +478,7 @@ public class GeRenZhongXinActivity extends MySwipeBackActivity implements View.O
             @Override
             public void getImageUrl(final GuangGao.ObjBean.BannerObjBean.AdInfoBean adInfo) {
 
-                if (adInfo==null||adInfo.equals("")){
+                if (adInfo==null){
                     home_sun.setVisibility(View.INVISIBLE);
 
                 }else {

@@ -9,7 +9,9 @@ import android.widget.TextView;
 
 import com.bjxiyang.shuzianfang.R;
 import com.bjxiyang.shuzianfang.myapplication.model.GongGao;
+import com.bjxiyang.shuzianfang.myapplication.model.Text;
 import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
+import com.bjxiyang.shuzianfang.myapplication.until.MyUntil;
 
 /**
  * Created by Administrator on 2017/6/10 0010.
@@ -26,6 +28,7 @@ public class XiaoQuGongGaoXiangQingActivity extends MySwipeBackActivity {
     private TextView tv_xiaoqugonggao_xiangqing_time;
     private TextView tv_xiaoqugonggao_xiangqing_wuyeguanlichu;
     private TextView tv_xiaoqugonggao_xiangqing_gonggaoxiangqing;
+    private TextView tv_jiaofeitongdao;
     /**
      * Data
      */
@@ -42,13 +45,13 @@ public class XiaoQuGongGaoXiangQingActivity extends MySwipeBackActivity {
     }
 
     private void sendData() {
-        tv_xiaoqugonggao_xiangqing_title.setText(obj.getTitle());
+        tv_xiaoqugonggao_xiangqing_title.setText(obj.getMsgType());
         tv_xiaoqugonggao_xiangqing_date.setText(obj.getAddTime());
-        if (obj.getType()==0){
-            iv_xiaoqugonggao_xiangqing_jinji.setVisibility(View.GONE);
-        }
-        tv_xiaoqugonggao_xiangqing_wuyeguanlichu.setText(obj.getNoticer()+"");
-        tv_xiaoqugonggao_xiangqing_gonggaoxiangqing.setText(obj.getContent());
+//        if (obj.getType()==0){
+//            iv_xiaoqugonggao_xiangqing_jinji.setVisibility(View.GONE);
+//        }
+//        tv_xiaoqugonggao_xiangqing_wuyeguanlichu.setText(obj.+"");
+        tv_xiaoqugonggao_xiangqing_gonggaoxiangqing.setText(obj.getMsgContent());
     }
     private void initUI() {
         rl_xiaoqugonggao_xiangqing_fanhui= (RelativeLayout) findViewById(R.id.rl_xiaoqugonggao_xiangqing_fanhui);
@@ -63,10 +66,30 @@ public class XiaoQuGongGaoXiangQingActivity extends MySwipeBackActivity {
         tv_xiaoqugonggao_xiangqing_date= (TextView) findViewById(R.id.tv_xiaoqugonggao_xiangqing_date);
         tv_xiaoqugonggao_xiangqing_wuyeguanlichu= (TextView) findViewById(R.id.tv_xiaoqugonggao_xiangqing_wuyeguanlichu);
         tv_xiaoqugonggao_xiangqing_gonggaoxiangqing= (TextView) findViewById(R.id.tv_xiaoqugonggao_xiangqing_gonggaoxiangqing);
+        tv_jiaofeitongdao= (TextView) findViewById(R.id.tv_jiaofeitongdao);
+        tv_jiaofeitongdao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MyUntil.mStartActivity(XiaoQuGongGaoXiangQingActivity.this,WuYeJiaoFeiActivity.class);
+            }
+        });
     }
     private void initData(){
         Intent intent=getIntent();
         obj= (GongGao.Obj) intent.getSerializableExtra("data");
+        isWuYeJiaoFei();
 //        gonggao= (GongGao) bundle.get("data");
     }
+    private void isWuYeJiaoFei(){
+        if (obj.getMsgType().equals("物业缴费")){
+            tv_jiaofeitongdao.setVisibility(View.VISIBLE);
+        }else {
+            tv_jiaofeitongdao.setVisibility(View.GONE);
+        }
+
+
+    }
+
+
+
 }
