@@ -16,6 +16,26 @@ public class OpenDoor {
 
     private String code;
     private String msg;
+
+    private String errorMsg;
+    private int errorType;
+
+    public String getErrorMsg() {
+        return errorMsg;
+    }
+
+    public int getErrorType() {
+        return errorType;
+    }
+
+    public void setErrorMsg(String errorMsg) {
+        this.errorMsg = errorMsg;
+    }
+
+    public void setErrorType(int errorType) {
+        this.errorType = errorType;
+    }
+
     private ObjBean Obj;
     private List<BannerObjBean> bannerObj;
     public String getCode() {

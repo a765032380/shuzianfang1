@@ -26,6 +26,7 @@ public class XiaoQuGongGaoXiangQingActivity extends MySwipeBackActivity {
     private TextView tv_xiaoqugonggao_xiangqing_time;
     private TextView tv_xiaoqugonggao_xiangqing_wuyeguanlichu;
     private TextView tv_xiaoqugonggao_xiangqing_gonggaoxiangqing;
+    private TextView tv_jiaofeitongdao;
     /**
      * Data
      */
@@ -42,6 +43,7 @@ public class XiaoQuGongGaoXiangQingActivity extends MySwipeBackActivity {
     }
 
     private void sendData() {
+
         tv_xiaoqugonggao_xiangqing_title.setText(obj.getTitle());
         tv_xiaoqugonggao_xiangqing_date.setText(obj.getAddTime());
         if (obj.getType()==0){
@@ -51,6 +53,13 @@ public class XiaoQuGongGaoXiangQingActivity extends MySwipeBackActivity {
         tv_xiaoqugonggao_xiangqing_gonggaoxiangqing.setText(obj.getContent());
     }
     private void initUI() {
+        tv_jiaofeitongdao= (TextView) findViewById(R.id.tv_jiaofeitongdao);
+        tv_jiaofeitongdao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(XiaoQuGongGaoXiangQingActivity.this,WuYeJiaoFeiActivity.class));
+            }
+        });
         rl_xiaoqugonggao_xiangqing_fanhui= (RelativeLayout) findViewById(R.id.rl_xiaoqugonggao_xiangqing_fanhui);
         rl_xiaoqugonggao_xiangqing_fanhui.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +76,11 @@ public class XiaoQuGongGaoXiangQingActivity extends MySwipeBackActivity {
     private void initData(){
         Intent intent=getIntent();
         obj= (GongGao.Obj) intent.getSerializableExtra("data");
+        if (obj.getTitle().equals("物业费缴纳")){
+            tv_jiaofeitongdao.setVisibility(View.VISIBLE);
+        }else {
+            tv_jiaofeitongdao.setVisibility(View.GONE);
+        }
 //        gonggao= (GongGao) bundle.get("data");
     }
 }

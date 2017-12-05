@@ -112,23 +112,37 @@
             android:textSize="18sp" />
 
         <TextView
-            android:visibility="gone"
             android:id="@+id/tv_xiaoqugonggao_xiangqing_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="10:00:00"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:visibility="gone" />
 
         <TextView
-            android:visibility="gone"
             android:id="@+id/tv_xiaoqugonggao_xiangqing_wuyeguanlichu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:text="物业管理处"
             android:textColor="#909090"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:visibility="invisible" />
     </LinearLayout>
+
+     <TextView
+         android:id="@+id/tv_jiaofeitongdao"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_gravity="bottom"
+         android:text="缴费通道" 
+         android:gravity="center"
+         android:textColor="#ffffff"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="50dp"
+         android:layout_marginBottom="15dp"
+         android:background="@drawable/conners_5dp_blue"/>
  </LinearLayout>
     </ScrollView>
 </LinearLayout>

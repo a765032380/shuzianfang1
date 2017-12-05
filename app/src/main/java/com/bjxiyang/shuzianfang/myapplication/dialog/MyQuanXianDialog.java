@@ -76,7 +76,7 @@ public class MyQuanXianDialog extends Dialog {
         tv_permission_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SPManager.getInstance().putBoolean("isQuanXian",true);
+
                 mainActivity.checkPermissions(needPermissions);
                 getQuanXian();
                 cancel();

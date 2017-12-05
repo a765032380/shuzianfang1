@@ -36,6 +36,16 @@ public class KaiMenDialog extends Dialog {
     ImageView home_sun;
     @BindView(R.id.ll_kaimenshibai)
     LinearLayout ll_kaimenshibai;
+    @BindView(R.id.tv_kaimentishi)
+    TextView tv_kaimentishi;
+    @BindView(R.id.tv_errorMsg)
+    TextView tv_errorMsg;
+
+
+
+    private String errorMsg;
+    private int errorType;
+    private String msg;
 
     private OnChongShiListener onChongShiListener;
     private int type;
@@ -45,11 +55,21 @@ public class KaiMenDialog extends Dialog {
     private void showShiBai(){
         ll_kaimenchenggong.setVisibility(View.GONE);
         ll_kaimenshibai.setVisibility(View.VISIBLE);
+        tv_kaimentishi.setText(msg);
+        tv_errorMsg.setText(errorMsg);
+        if (errorType==0) {
+            tv_chongshi.setVisibility(View.INVISIBLE);
+            tv_lianxikefu.setVisibility(View.INVISIBLE);
+        }else {
+            tv_chongshi.setVisibility(View.GONE);
+            tv_lianxikefu.setVisibility(View.GONE);
+        }
     }
 
     private void showChengGong(){
         ll_kaimenchenggong.setVisibility(View.VISIBLE);
         ll_kaimenshibai.setVisibility(View.GONE);
+
         if (bannerObjBean!=null){
             ImageLoaderManager.getInstance(getContext())
                     .displayImage(home_sun,bannerObjBean.getImageurl());
@@ -72,6 +92,13 @@ public class KaiMenDialog extends Dialog {
         super(context,R.style.dialog);
         this.type=type;
         bannerObjBean=bannerObjBean1;
+    }
+    public KaiMenDialog(@NonNull Context context, int type,int errorType, String errorMsg,String msg) {
+        super(context,R.style.dialog);
+        this.type=type;
+        this.errorMsg=errorMsg;
+        this.errorType=errorType;
+        this.msg=msg;
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

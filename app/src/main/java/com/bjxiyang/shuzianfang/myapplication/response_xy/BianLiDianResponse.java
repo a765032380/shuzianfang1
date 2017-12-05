@@ -8,8 +8,8 @@ public class BianLiDianResponse {
 
 //    public static final String URL="http://47.92.106.249:18088/zsq/api/user/";
 //    public static final String URL="http://101.200.75.233/zsq/api/user/";
-public static final String URL="http://47.92.106.249:8088/zsq/api/user/";
-//public static final String URL = "http://192.168.1.229:8080/api/user/";
+//public static final String URL="http://47.92.106.249:8088/zsq/api/user/";
+public static final String URL = "http://192.168.1.119:8080/api/user/";
 
 
     public static final String URL_SELLER_LIST=URL+"seller/list?";

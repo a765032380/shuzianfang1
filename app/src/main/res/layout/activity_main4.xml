@@ -254,7 +254,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:layout_marginLeft="25dp"
-            android:text="感谢您使用智社区"
+            android:text="您已生活在数字安防社区"
             android:textColor="#999999"
             android:textSize="14sp" />
 

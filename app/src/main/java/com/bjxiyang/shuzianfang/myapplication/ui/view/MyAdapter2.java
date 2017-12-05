@@ -129,7 +129,7 @@ public class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.ViewHolder>  {
                         kaiMenYouXiDialog.show();
                     }
                 }else {
-                    KaiMenDialog dialog=new KaiMenDialog(v.getContext(),2,null);
+                    KaiMenDialog dialog=new KaiMenDialog(v.getContext(),2,openDoor.getErrorType(),openDoor.getErrorMsg(),openDoor.getMsg());
                     dialog.setOnChongShiListener(new KaiMenDialog.OnChongShiListener() {
                         @Override
                         public void chongShi() {
