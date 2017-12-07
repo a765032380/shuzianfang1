@@ -7,8 +7,8 @@ package com.bjxiyang.shuzianfang.myapplication.response_xy;
 public class XY_Response2 {
 
 
-//    public static final String URL="http://47.92.104.209:8088/anfang/";
-    public static final String URL="http://192.168.1.119:8080/anfang/";
+    public static final String URL="http://47.92.104.209:8088/anfang/";
+//    public static final String URL="http://192.168.1.119:8080/anfang/";
     //获取首页信息
     public static final String URL_HOME=URL+"init/firstinit?";
     //获取地址信息后请求店铺信息

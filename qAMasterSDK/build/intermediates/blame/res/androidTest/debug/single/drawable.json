@@ -12,12 +12,12 @@
         "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/drawable/qamaster_dialog_button.xml"
     },
     {
-        "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable/qamaster_circle_button_problem.xml",
-        "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/drawable/qamaster_circle_button_problem.xml"
-    },
-    {
         "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable/qamaster_loader.xml",
         "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/drawable/qamaster_loader.xml"
+    },
+    {
+        "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable/qamaster_circle_button_problem.xml",
+        "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/drawable/qamaster_circle_button_problem.xml"
     },
     {
         "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable/qamaster_report_feedback_circle.xml",
@@ -28,12 +28,12 @@
         "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/drawable/qamaster_dialog_background.xml"
     },
     {
-        "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable/qamaster_input.xml",
-        "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/drawable/qamaster_input.xml"
-    },
-    {
         "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable/qamaster_circle_button_problem.xml",
         "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/drawable/qamaster_circle_button_problem.xml"
+    },
+    {
+        "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable/qamaster_input.xml",
+        "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/drawable/qamaster_input.xml"
     },
     {
         "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable/qamaster_button_problem.xml",

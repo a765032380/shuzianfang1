@@ -7,9 +7,19 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.baisi.myapplication.okhttp.listener.DisposeDataListener;
 import com.bjxiyang.shuzianfang.R;
+import com.bjxiyang.shuzianfang.myapplication.adapter.XiaoQuGongGaoAdapter;
+import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.model.GongGao;
+import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
 import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
+import com.bjxiyang.shuzianfang.myapplication.until.DialogUntil;
+import com.bjxiyang.shuzianfang.myapplication.until.MyUntil;
+import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Administrator on 2017/6/10 0010.
@@ -38,7 +48,7 @@ public class XiaoQuGongGaoXiangQingActivity extends MySwipeBackActivity {
         setContentView(R.layout.activity_xiaoqugonggao_xiangqing3);
         initUI();
         initData();
-        sendData();
+
 
     }
 
@@ -76,11 +86,41 @@ public class XiaoQuGongGaoXiangQingActivity extends MySwipeBackActivity {
     private void initData(){
         Intent intent=getIntent();
         obj= (GongGao.Obj) intent.getSerializableExtra("data");
-        if (obj.getTitle().equals("物业费缴纳")){
-            tv_jiaofeitongdao.setVisibility(View.VISIBLE);
+        if (obj==null){
+            getData();
         }else {
-            tv_jiaofeitongdao.setVisibility(View.GONE);
+            sendData();
         }
 //        gonggao= (GongGao) bundle.get("data");
+    }
+    private void getData(){
+        DialogUntil.showLoadingDialog(this,"正在加载",true);
+        String url= XY_Response.URL_GETNOTICELIST+"cmemberId="+
+                SPManager.getInstance().getString("c_memberId",null);
+
+        RequestCenter.getNoticeList(url, new DisposeDataListener() {
+            @Override
+            public void onSuccess(Object responseObj) {
+                DialogUntil.closeLoadingDialog();
+                GongGao gongGao= (GongGao) responseObj;
+                if (gongGao.getCode().equals("1000")){
+                    if (gongGao.getObj().size()>0) {
+                        obj = gongGao.getObj().get(0);
+                        if (obj.getTitle().equals("物业费缴纳")) {
+                            tv_jiaofeitongdao.setVisibility(View.VISIBLE);
+                        } else {
+                            tv_jiaofeitongdao.setVisibility(View.GONE);
+                        }
+                        sendData();
+                    }
+
+                }
+            }
+
+            @Override
+            public void onFailure(Object reasonObj) {
+                DialogUntil.closeLoadingDialog();
+            }
+        });
     }
 }

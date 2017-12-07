@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/layout/qamaster_login_page_credentials.xml",
-        "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/layout/qamaster_login_page_credentials.xml"
-    },
-    {
         "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/layout/qamaster_report.xml",
         "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/layout/qamaster_report.xml"
+    },
+    {
+        "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/layout/qamaster_login_page_credentials.xml",
+        "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/layout/qamaster_login_page_credentials.xml"
     },
     {
         "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/layout/qamaster_screenshot_element.xml",
@@ -36,16 +36,16 @@
         "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/layout/qamaster_report_success.xml"
     },
     {
-        "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/layout/qamaster_login_normal.xml",
-        "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/layout/qamaster_login_normal.xml"
+        "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/layout/qamaster_feedback_options.xml",
+        "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/layout/qamaster_feedback_options.xml"
     },
     {
         "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/layout/qamaster_report.xml",
         "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/layout/qamaster_report.xml"
     },
     {
-        "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/layout/qamaster_feedback_options.xml",
-        "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/layout/qamaster_feedback_options.xml"
+        "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/layout/qamaster_login_normal.xml",
+        "source": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/bundles/debug/res/layout/qamaster_login_normal.xml"
     },
     {
         "merged": "/Users/gll/Desktop/shuzianfang/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/layout/qamaster_bugtag_hint.xml",

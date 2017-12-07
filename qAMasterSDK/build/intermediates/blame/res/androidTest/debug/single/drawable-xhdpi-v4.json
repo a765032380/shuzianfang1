@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/text.png",
-        "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/text.png"
-    },
-    {
         "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/qamaster_star_normal.png",
         "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/qamaster_star_normal.png"
+    },
+    {
+        "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/text.png",
+        "source": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/text.png"
     },
     {
         "merged": "/Users/gll/StudioProjects/shuzianfang1/qAMasterSDK/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/qamaster_btn_check_off_holo_dark.png",
