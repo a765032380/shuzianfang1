@@ -118,7 +118,9 @@ public class XiaoQuGongGaoActivity extends MySwipeBackActivity
         Bundle bundle=new Bundle();
         bundle.putSerializable("data",mList.get(position));
         Intent intent=new Intent(XiaoQuGongGaoActivity.this,XiaoQuGongGaoXiangQingActivity.class);
+        intent.putExtra("type",1);
         intent.putExtras(bundle);
+
         startActivity(intent);
 
     }

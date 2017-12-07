@@ -25,6 +25,7 @@ import com.bjxiyang.shuzianfang.myapplication.response_xy.Response_AF;
 import com.bjxiyang.shuzianfang.myapplication.until.MyUntil;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -103,16 +104,11 @@ public class TaRenHuiFuFragment extends Fragment implements SwipeRefreshLayout.O
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         SPManager.getInstance().putInt("xiaoxi",(SPManager.getInstance().getInt("xiaoxi",0)-1));
 
-            GongGao.Obj obj=new GongGao.Obj();
-            obj.setAddTime(mList2.get(position).getAddTime());
-            obj.setContent(mList2.get(position).getMsgContent());
-            obj.setTitle(mList2.get(position).getMsgType());
-
-
         Intent intent=new Intent(getContext(), XiaoQuGongGaoXiangQingActivity.class);
-//        Bundle bundle=new Bundle();
-//        bundle.putSerializable("data",gongGao);
-        intent.putExtra("data",obj);
+        Bundle bundle=new Bundle();
+        bundle.putSerializable("data", mList2.get(position));
+        intent.putExtras(bundle);
+        intent.putExtra("type",1);
         startActivity(intent);
 
 

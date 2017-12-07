@@ -1,5 +1,6 @@
 package com.bjxiyang.shuzianfang.myapplication.model;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -42,7 +43,7 @@ public class MsgList {
         this.obj = obj;
     }
 
-    public static class ObjBean {
+    public static class ObjBean implements Serializable {
         /**
          * userId : 268
          * msgContent : 您发起的活动已有人加入，请在“街坊儿”中与朋友们规划行程吧！
