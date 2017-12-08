@@ -13,7 +13,6 @@ import com.bjxiyang.shuzianfang.R;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.model.FanHui2;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response2;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.BeasActivity;
 import com.bjxiyang.shuzianfang.myapplication.until.DialogUntil;
 import com.bjxiyang.shuzianfang.myapplication.until.MyUntil;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;

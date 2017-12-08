@@ -21,7 +21,7 @@ import com.bjxiyang.shuzianfang.myapplication.manager.UserManager;
 import com.bjxiyang.shuzianfang.myapplication.model.FanHui;
 import com.bjxiyang.shuzianfang.myapplication.model.Phoneinfo;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.HomeActivity;
+import com.bjxiyang.shuzianfang.myapplication.activity.HomeActivity;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
 import com.google.gson.Gson;
 

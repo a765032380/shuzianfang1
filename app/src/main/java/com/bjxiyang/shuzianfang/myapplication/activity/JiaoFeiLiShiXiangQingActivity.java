@@ -10,7 +10,6 @@ import com.bjxiyang.shuzianfang.R;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.model.JiaoFeiLiShiXiangQing;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
 
 import butterknife.BindView;

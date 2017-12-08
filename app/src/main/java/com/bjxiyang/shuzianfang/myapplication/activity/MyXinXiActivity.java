@@ -93,31 +93,20 @@ public class MyXinXiActivity extends SwipeBackActivity implements View.OnClickLi
         setContentView(R.layout.activity_gerenxinxi_xiugai2);
         ButterKnife.bind(this);
         initUI();
-
         mHeadPhotoUrl=SPManager.getInstance().getString("headPhotoUrl","");
-
     }
-
     @Override
     protected void onResume() {
         super.onResume();
         if (SPManager.getInstance().getString("c_memberId",null)!=null ||
                 !SPManager.getInstance().getString("c_memberId","").equals("")) {
-
-
             sex=SPManager.getInstance().getString("sex","");
             mNickName=SPManager.getInstance().getString("nickName","");
             mRealName=SPManager.getInstance().getString("realname","");
             setTextForHTTP();
         }
-
         tv_phone.setText(SPManager.getInstance().getString("mobilePhone",""));
-
-
-
-
     }
-
     private void initUI() {
         ll_gerenxinxi_xiugai_realname.setOnClickListener(this);
         ll_shimingrenzheng.setOnClickListener(this);
@@ -146,9 +135,6 @@ public class MyXinXiActivity extends SwipeBackActivity implements View.OnClickLi
         }else {
             tv_weixinhao.setText("已绑定");
         }
-
-
-
         if (mNickName!=null&&!mNickName.equals("")){
             tv_gerenxinxi_xiugai_name.setText(mNickName);
         }else {
@@ -220,7 +206,6 @@ public class MyXinXiActivity extends SwipeBackActivity implements View.OnClickLi
             //绑定微信
             case R.id.ll_weixinhao:
                 if (!SPManager.getInstance().getString("openid","").equals("")) {
-
                     final AlertDialog.Builder builder = new AlertDialog.Builder(MyXinXiActivity.this);
                     builder.setTitle("您确定要解除绑定吗？");
                     builder.setIcon(R.mipmap.app_logo);
@@ -240,25 +225,13 @@ public class MyXinXiActivity extends SwipeBackActivity implements View.OnClickLi
                 }else {
                     loginWithWeixin();
                 }
-
-
-
                 break;
             //绑定QQ
             case R.id.ll_qq:
                 break;
-
-
-
-
-
-
-
-
         }
     }
     private IWXAPI mWeixinAPI;
-
     private void logOutWithWeiXin(){
         SPManager.getInstance().remove("openid");
         String url=XY_Response.URL_INIT_UPDATETHIRDINFO;
@@ -281,29 +254,21 @@ public class MyXinXiActivity extends SwipeBackActivity implements View.OnClickLi
             }
         });
     }
-
-
-
-
     private void loginWithWeixin() {
         if (mWeixinAPI == null) {
             mWeixinAPI = WXAPIFactory.createWXAPI(this, WEIXIN_APP_ID, false);
         }
-
         if (!mWeixinAPI.isWXAppInstalled()) {
             MyUntil.show(this,"请先安装微信");
             //提醒用户没有按照微信
             return;
         }
-
         mWeixinAPI.registerApp(WEIXIN_APP_ID);
-
         SendAuth.Req req = new SendAuth.Req();
         req.scope = WEIXIN_SCOPE;
         req.state = WEIXIN_STATE;
         boolean b=mWeixinAPI.sendReq(req);
         finish();
-        Log.i("LLLL",b+"");
     }
     private void showSelectSexDialog(){
         dialog=new SelectSexDialog(MyXinXiActivity.this);
@@ -341,7 +306,6 @@ public class MyXinXiActivity extends SwipeBackActivity implements View.OnClickLi
         });
         dialog.show();
     }
-
     /**
      * 用onActivityResult()接收传回的图像，当用户拍完照片，或者取消后，系统都会调用这个函数
      */
@@ -349,24 +313,6 @@ public class MyXinXiActivity extends SwipeBackActivity implements View.OnClickLi
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         // TODO Auto-generated method stub
         super.onActivityResult(requestCode, resultCode, intent);
-//        if (requestCode == RESULT_CANCELED && resultCode == RESULT_OK) {
-//
-//            Bundle extras = intent.getExtras();//从Intent中获取附加值
-//            Bitmap bitmap=(Bitmap) extras.get("data");
-//            mFile=compressImagefile(bitmap);
-//            LuBan.setOnGetImage(MyXinXiActivity.this, mFile, new LuBan.OnGetImage() {
-//                @Override
-//                public void getImage(File file) {
-//                    map.put("iconFile", file);
-//
-//                }
-//            });
-//
-////            saveBitmapToSharedPreferences((Bitmap) extras.get("data"));
-////            从附加值中获取返回的图像
-//            iv_gerenxinxi_xiugai_touxiang.setImageBitmap(bitmap);
-//            bitmap.recycle();
-//        }
         if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK) {
             final Uri uri1 = intent.getData();
             Bitmap bitmap=getBitmapFromUri(uri1);

@@ -14,9 +14,6 @@ import com.bjxiyang.shuzianfang.R;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.manager.UserManager;
 import com.bjxiyang.shuzianfang.myapplication.model.UpdateVersion;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.FuWuTiaoKuanActivity;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.SDLoginActivity;
 import com.bjxiyang.shuzianfang.myapplication.until.DialogUntil;
 import com.bjxiyang.shuzianfang.myapplication.until.MyUntil;
 import com.bjxiyang.shuzianfang.myapplication.update.CommonDialog;
@@ -59,9 +56,6 @@ public class SheZhiActivity extends MySwipeBackActivity implements View.OnClickL
         ll_setting_guanyuwomen.setOnClickListener(this);
         ll_setting_pingfen.setOnClickListener(this);
         siginoutbutton.setOnClickListener(this);
-
-
-
     }
 
     @Override
@@ -138,11 +132,6 @@ public class SheZhiActivity extends MySwipeBackActivity implements View.OnClickL
 
                 if (updateModel.getCode().equals("1000")) {
                     UpdateVersion.ObjBean obj=updateModel.getObj();
-
-
-                    Log.i("lllll",Util.getVersionCode(SheZhiActivity.this)+"---"+obj.getVerNo());
-                    Log.i("lllll",Double.valueOf(Util.getVersionCode(SheZhiActivity.this))
-                            +"---"+Double.valueOf(obj.getVerNo()));
                     if (Double.valueOf(Util.getVersionCode(SheZhiActivity.this))< Double.valueOf(obj.getVerNo())) {
                         //说明有新版本,开始下载
                         CommonDialog dialog = new CommonDialog(SheZhiActivity.this,
@@ -174,7 +163,7 @@ public class SheZhiActivity extends MySwipeBackActivity implements View.OnClickL
 
                 AlertDialog.Builder builder=new AlertDialog.Builder(SheZhiActivity.this);
                 AlertDialog dialog=builder
-                        .setIcon(R.mipmap.ic_launcher)
+                        .setIcon(R.mipmap.app_logo)
                         .setTitle("检查更新")
                         .setMessage("网络连接失败")
                         .setPositiveButton("确定", null)

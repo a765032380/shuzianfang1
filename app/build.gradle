@@ -163,6 +163,7 @@ dependencies {
     //数字滚动的依赖
     compile 'com.github.AndroidMsky:RandomTextView:v1.3'
     //    compile project(path: ':transitionhelper')
+    //转场动画的依赖
     compile project(path: ':viewspreadtranslationlibrary')
     compile files('libs/lite-orm-1.7.0.jar')
     //微信支付的依赖

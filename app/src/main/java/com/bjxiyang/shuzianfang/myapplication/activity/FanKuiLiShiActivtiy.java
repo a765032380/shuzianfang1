@@ -12,8 +12,10 @@ import com.bjxiyang.shuzianfang.myapplication.adapter.FanKuiLiShiAdapter;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.model.FanKuiLiShi;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Created by Administrator on 2017/10/21 0021.
@@ -21,10 +23,12 @@ import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
 
 public class FanKuiLiShiActivtiy extends MySwipeBackActivity {
 
-
-    private RelativeLayout iv_lishifankui_fanhui;
-    private ListView list_view;
-    private SwipeRefreshLayout swipeRefreshLayout;
+    @BindView(R.id.iv_lishifankui_fanhui)
+    RelativeLayout iv_lishifankui_fanhui;
+    @BindView(R.id.list_view)
+    ListView list_view;
+    @BindView(R.id.swipeRefreshLayout)
+    SwipeRefreshLayout swipeRefreshLayout;
 
     private FanKuiLiShiAdapter adapter;
 
@@ -32,6 +36,7 @@ public class FanKuiLiShiActivtiy extends MySwipeBackActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lishifankui);
+        ButterKnife.bind(this);
         initUI();
         initData();
     }
@@ -44,8 +49,7 @@ public class FanKuiLiShiActivtiy extends MySwipeBackActivity {
             public void onSuccess(Object responseObj) {
                 FanKuiLiShi fanKuiLiShi= (FanKuiLiShi) responseObj;
                 if (fanKuiLiShi.getCode()==1000){
-                    adapter=new FanKuiLiShiAdapter(FanKuiLiShiActivtiy.this,fanKuiLiShi.getObj());
-                    list_view.setAdapter(adapter);
+                   setData(fanKuiLiShi);
                 }
             }
 
@@ -54,21 +58,19 @@ public class FanKuiLiShiActivtiy extends MySwipeBackActivity {
 
             }
         });
-
-
-
+    }
+    private void setData(FanKuiLiShi fanKuiLiShi){
+        adapter=new FanKuiLiShiAdapter(FanKuiLiShiActivtiy.this,fanKuiLiShi.getObj());
+        list_view.setAdapter(adapter);
     }
 
     private void initUI() {
-        iv_lishifankui_fanhui= (RelativeLayout) findViewById(R.id.iv_lishifankui_fanhui);
         iv_lishifankui_fanhui.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-        list_view= (ListView) findViewById(R.id.lv_lishifankui);
-        swipeRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

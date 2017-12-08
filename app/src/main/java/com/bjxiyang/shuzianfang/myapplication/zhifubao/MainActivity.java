@@ -8,7 +8,7 @@ import java.util.Map;
 import com.alipay.sdk.app.AuthTask;
 import com.alipay.sdk.app.PayTask;
 import com.bjxiyang.shuzianfang.R;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
+import com.bjxiyang.shuzianfang.myapplication.activity.MySwipeBackActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

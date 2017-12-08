@@ -19,7 +19,7 @@ import com.bjxiyang.shuzianfang.myapplication.app.GuardApplication;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.model.PermissionList;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.view.XYKeyaccreditAdapter;
+import com.bjxiyang.shuzianfang.myapplication.view.XYKeyaccreditAdapter;
 import com.bjxiyang.shuzianfang.myapplication.until.DialogUntil;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
 import com.bjxiyang.shuzianfang.myapplication.view.SwipeListLayout;

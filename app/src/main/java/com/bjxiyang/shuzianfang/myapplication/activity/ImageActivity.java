@@ -1,13 +1,11 @@
 package com.bjxiyang.shuzianfang.myapplication.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.baisi.imoocsdk.imageloader.ImageLoaderManager;
 import com.bjxiyang.shuzianfang.R;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 
 /**
  * Created by gll on 2017/11/1.

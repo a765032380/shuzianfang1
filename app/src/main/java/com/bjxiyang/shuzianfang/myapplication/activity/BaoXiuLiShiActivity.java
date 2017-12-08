@@ -12,8 +12,10 @@ import com.bjxiyang.shuzianfang.myapplication.adapter.JiLuAdapter;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.model.BaoXiuLiShi;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Created by gll on 2017/10/20 0020.
@@ -33,16 +35,19 @@ import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
 
 
 public class BaoXiuLiShiActivity extends MySwipeBackActivity {
-
-    private RelativeLayout iv_lishibaoxiu_fanhui;
-    private ListView list_view;
-    private SwipeRefreshLayout swipeRefreshLayout;
+    @BindView(R.id.iv_lishibaoxiu_fanhui)
+    RelativeLayout iv_lishibaoxiu_fanhui;
+    @BindView(R.id.list_view)
+    ListView list_view;
+    @BindView(R.id.swipeRefreshLayout)
+    SwipeRefreshLayout swipeRefreshLayout;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lishibaoxiu);
+        ButterKnife.bind(this);
         initUI();
         initData();
 
@@ -73,15 +78,12 @@ public class BaoXiuLiShiActivity extends MySwipeBackActivity {
     }
 
     private void initUI() {
-        iv_lishibaoxiu_fanhui= (RelativeLayout) findViewById(R.id.iv_lishibaoxiu_fanhui);
         iv_lishibaoxiu_fanhui.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-        list_view= (ListView) findViewById(R.id.list_view);
-        swipeRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

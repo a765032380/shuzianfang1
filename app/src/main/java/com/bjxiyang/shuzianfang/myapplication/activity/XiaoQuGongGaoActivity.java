@@ -15,7 +15,6 @@ import com.bjxiyang.shuzianfang.myapplication.adapter.XiaoQuGongGaoAdapter;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.model.GongGao;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.myapplication.until.DialogUntil;
 import com.bjxiyang.shuzianfang.myapplication.until.MyUntil;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
@@ -23,47 +22,50 @@ import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * Created by Administrator on 2017/6/9 0009.
  */
 
-public class XiaoQuGongGaoActivity extends MySwipeBackActivity
-        implements View.OnClickListener
-        ,AdapterView.OnItemClickListener
-        ,SwipeRefreshLayout.OnRefreshListener{
-    private RelativeLayout rl_xiaoqugonggao_fanhui;
-    private ListView lv_xiaoqugonggao;
+public class XiaoQuGongGaoActivity extends MySwipeBackActivity implements View.OnClickListener
+        ,AdapterView.OnItemClickListener,SwipeRefreshLayout.OnRefreshListener{
+    @BindView(R.id.rl_xiaoqugonggao_fanhui)
+    RelativeLayout rl_xiaoqugonggao_fanhui;
+    @BindView(R.id.lv_xiaoqugonggao)
+    ListView lv_xiaoqugonggao;
+    @BindView(R.id.ll_xiaoqugonggao_wuxiaoxi)
+    LinearLayout ll_xiaoqugonggao_wuxiaoxi;
+    @BindView(R.id.ll_xiaoqugonggao_wuwangluo)
+    LinearLayout ll_xiaoqugonggao_wuwangluo;
+    @BindView(R.id.swipeRefreshLayout)
+    SwipeRefreshLayout swipeRefreshLayout;
+    @BindView(R.id.swipeRefreshLayout1)
+    SwipeRefreshLayout swipeRefreshLayout1;
+    @BindView(R.id.swipeRefreshLayout2)
+    SwipeRefreshLayout swipeRefreshLayout2;
+
     private List<GongGao.Obj> mList;
     private XiaoQuGongGaoAdapter adapter;
-    private LinearLayout ll_xiaoqugonggao_wuxiaoxi;
-    private LinearLayout ll_xiaoqugonggao_listview;
-    private LinearLayout ll_xiaoqugonggao_wuwangluo;
-    private SwipeRefreshLayout swipeRefreshLayout;
-    private SwipeRefreshLayout swipeRefreshLayout1;
-    private SwipeRefreshLayout swipeRefreshLayout2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_xiaoqugonggao3);
+        ButterKnife.bind(this);
         initUI();
         getData();
 
     }
 
     private void initUI() {
-        ll_xiaoqugonggao_wuxiaoxi= (LinearLayout) findViewById(R.id.ll_xiaoqugonggao_wuxiaoxi);
-        ll_xiaoqugonggao_wuwangluo= (LinearLayout) findViewById(R.id.ll_xiaoqugonggao_wuwangluo);
-        rl_xiaoqugonggao_fanhui= (RelativeLayout) findViewById(R.id.rl_xiaoqugonggao_fanhui);
         rl_xiaoqugonggao_fanhui.setOnClickListener(this);
-        lv_xiaoqugonggao= (ListView) findViewById(R.id.lv_xiaoqugonggao);
         lv_xiaoqugonggao.setOnItemClickListener(this);
-        swipeRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
         swipeRefreshLayout.setOnRefreshListener(this);
         swipeRefreshLayout.setColorSchemeResources(R.color.color_898787);
-        swipeRefreshLayout1= (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout1);
         swipeRefreshLayout1.setOnRefreshListener(this);
         swipeRefreshLayout1.setColorSchemeResources(R.color.color_898787);
-        swipeRefreshLayout2= (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout2);
         swipeRefreshLayout2.setOnRefreshListener(this);
         swipeRefreshLayout2.setColorSchemeResources(R.color.color_898787);
     }

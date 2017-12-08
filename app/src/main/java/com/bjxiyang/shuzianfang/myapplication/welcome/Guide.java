@@ -12,8 +12,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bjxiyang.shuzianfang.R;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.BeasActivity;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.SDLoginActivity;
+import com.bjxiyang.shuzianfang.myapplication.activity.BeasActivity;
+import com.bjxiyang.shuzianfang.myapplication.activity.SDLoginActivity;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -10,8 +10,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bjxiyang.shuzianfang.R;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.BeasActivity;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.SDLoginActivity;
+import com.bjxiyang.shuzianfang.myapplication.activity.BeasActivity;
+import com.bjxiyang.shuzianfang.myapplication.activity.SDLoginActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;

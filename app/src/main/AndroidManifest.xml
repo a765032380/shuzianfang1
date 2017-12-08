@@ -145,7 +145,7 @@
 
         </activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.SDLogin2Activity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.SDLogin2Activity"
             android:theme="@style/otherPageStyle"></activity>
         <activity
             android:name="com.bjxiyang.shuzianfang.myapplication.activity.JiaoFeiLiShiXiangQingActivity"
@@ -157,31 +157,28 @@
             android:name="com.bjxiyang.shuzianfang.myapplication.activity.FanKuiLiShiActivtiy"
             android:theme="@style/otherPageStyle"></activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.XYKeyAccredit"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.XYKeyAccredit"
             android:theme="@style/otherPageStyle"></activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.XYRecordActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.XYRecordActivity"
             android:theme="@style/otherPageStyle"></activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.XY_AddKeyaccreditActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.XY_AddKeyaccreditActivity"
             android:theme="@style/otherPageStyle"></activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.XYXiuGaiActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.XYXiuGaiActivity"
             android:theme="@style/otherPageStyle"></activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.XYMenJinJiLuActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.XYMenJinJiLuActivity"
             android:theme="@style/otherPageStyle"></activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.XY_JinRongWebActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.XY_JinRongWebActivity"
             android:theme="@style/otherPageStyle"></activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.RegisteredActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.YiJianFanKuiActivity"
             android:theme="@style/otherPageStyle"></activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.YiJianFanKuiActivity"
-            android:theme="@style/otherPageStyle"></activity>
-        <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.MyWebViewActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.MyWebViewActivity"
             android:theme="@style/otherPageStyle"></activity>
         <activity
             android:name="com.bjxiyang.shuzianfang.myapplication.activity.WuYeBaoXiuActivity"
@@ -229,17 +226,17 @@
 
         <!--</activity>-->
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.FuWuTiaoKuanActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.FuWuTiaoKuanActivity"
             android:theme="@style/otherPageStyle"></activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.KaiMenYouXiActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.KaiMenYouXiActivity"
             android:theme="@style/Transparent"></activity>
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.HomeActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.HomeActivity"
             android:theme="@style/otherPageStyle"></activity>
 
         <activity
-            android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.GeRenZhongXinActivity"
+            android:name="com.bjxiyang.shuzianfang.myapplication.activity.GeRenZhongXinActivity"
             android:theme="@style/otherPageStyle"></activity>
 
         <activity
@@ -290,7 +287,7 @@
         <!--</activity>-->
 
 
-        <activity android:name="com.bjxiyang.shuzianfang.myapplication.ui.activity.SDLoginActivity">
+        <activity android:name="com.bjxiyang.shuzianfang.myapplication.activity.SDLoginActivity">
 
         </activity>
         <service android:name="com.bjxiyang.shuzianfang.myapplication.update.service.UpdateService"/>
@@ -429,7 +426,7 @@
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
             android:screenOrientation="behind"></activity>
-<receiver android:name="com.bjxiyang.shuzianfang.myapplication.ui.video.VideoBroadcastReceiver">
+<receiver android:name="com.bjxiyang.shuzianfang.myapplication.recriver.VideoBroadcastReceiver">
     <intent-filter>
     <action android:name="org.ebiao.kaoqin.YTXHelper.UsernameSN"></action>
     </intent-filter>

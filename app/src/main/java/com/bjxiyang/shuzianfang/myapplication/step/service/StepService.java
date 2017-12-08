@@ -26,7 +26,7 @@ import com.bjxiyang.shuzianfang.myapplication.step.accelerometer.StepCount;
 import com.bjxiyang.shuzianfang.myapplication.step.accelerometer.StepValuePassListener;
 import com.bjxiyang.shuzianfang.myapplication.step.bean.StepData;
 import com.bjxiyang.shuzianfang.myapplication.step.utils.DbUtils;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.HomeActivity;
+import com.bjxiyang.shuzianfang.myapplication.activity.HomeActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

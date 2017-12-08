@@ -8,8 +8,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.bjxiyang.shuzianfang.R;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.YiJianFanKuiActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

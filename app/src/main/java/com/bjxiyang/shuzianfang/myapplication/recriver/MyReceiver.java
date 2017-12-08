@@ -8,7 +8,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.HomeActivity;
+import com.bjxiyang.shuzianfang.myapplication.activity.HomeActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;

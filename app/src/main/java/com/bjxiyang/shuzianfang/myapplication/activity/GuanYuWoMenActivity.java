@@ -5,7 +5,6 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.bjxiyang.shuzianfang.R;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 
 /**
  * Created by Administrator on 2017/8/21 0021.

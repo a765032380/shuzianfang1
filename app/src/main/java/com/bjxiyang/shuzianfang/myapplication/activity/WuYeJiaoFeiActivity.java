@@ -11,7 +11,6 @@ import android.widget.RelativeLayout;
 import com.baisi.myapplication.okhttp.listener.DisposeDataListener;
 import com.bjxiyang.shuzianfang.myapplication.model.WuYeJiaoFei;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.R;
 import com.bjxiyang.shuzianfang.myapplication.adapter.WuYeJiaoFeiAdapter;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
@@ -49,12 +48,6 @@ public class WuYeJiaoFeiActivity extends MySwipeBackActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wuyejiaofei);
         initUI();
-//        if (Util.getVersionCode(WuYeJiaoFeiActivity.this)==1){
-//            showBanBen();
-//            }else {
-
-//            }
-
         }
 
     @Override
@@ -72,8 +65,6 @@ public class WuYeJiaoFeiActivity extends MySwipeBackActivity
                 MyUntil.mStartActivity(WuYeJiaoFeiActivity.this,JiaoFeiLiShiActivity.class);
             }
         });
-//        ll_activity_banbentishi= (LinearLayout) findViewById(R.id.ll_activity_banbentishi);
-//        ll_activity_wuxiangmu= (LinearLayout) findViewById(R.id.ll_activity_wuxiangmu);
         ll_activity_wuwangluo= (LinearLayout) findViewById(R.id.ll_activity_wuwangluo);
         iv_wuyejiaofei_fanhui= (RelativeLayout) findViewById(R.id.iv_wuyejiaofei_fanhui);
         iv_wuyejiaofei_fanhui.setOnClickListener(this);
@@ -81,12 +72,6 @@ public class WuYeJiaoFeiActivity extends MySwipeBackActivity
         swipeRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
         swipeRefreshLayout.setOnRefreshListener(this);
         swipeRefreshLayout.setColorSchemeResources(R.color.color_898787);
-//        swipeRefreshLayout1= (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout1);
-//        swipeRefreshLayout1.setOnRefreshListener(this);
-//        swipeRefreshLayout1.setColorSchemeResources(R.color.color_898787);
-//        swipeRefreshLayout2= (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout2);
-//        swipeRefreshLayout2.setOnRefreshListener(this);
-//        swipeRefreshLayout2.setColorSchemeResources(R.color.color_898787);
     }
 
     @Override

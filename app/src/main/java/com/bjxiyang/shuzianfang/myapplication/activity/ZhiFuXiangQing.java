@@ -21,7 +21,6 @@ import com.bjxiyang.shuzianfang.myapplication.model.OrderWeiXin;
 import com.bjxiyang.shuzianfang.myapplication.model.ProPayOrder;
 import com.bjxiyang.shuzianfang.myapplication.model.ProPayOrderByAli;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.R;
 import com.bjxiyang.shuzianfang.myapplication.app.GuardApplication;
 import com.bjxiyang.shuzianfang.myapplication.until.DialogUntil;

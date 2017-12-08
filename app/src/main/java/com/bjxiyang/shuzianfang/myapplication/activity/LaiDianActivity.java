@@ -9,16 +9,19 @@ import android.widget.TextView;
 
 import com.bjxiyang.shuzianfang.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * Created by Administrator on 2017/10/18 0018.
  */
 
 public class LaiDianActivity extends Activity{
-//    @BindView(R.id.iv_camera)
+    @BindView(R.id.iv_camera)
     ImageView iv_camera;
-//    @BindView(R.id.tv_guaduan)
+    @BindView(R.id.tv_guaduan)
     TextView tv_guaduan;
-//    @BindView(R.id.tv_jieting)
+    @BindView(R.id.tv_jieting)
     TextView tv_jieting;
 
 
@@ -26,16 +29,16 @@ public class LaiDianActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_laidian);
-//        ButterKnife.bind(this);
+        ButterKnife.bind(this);
         initUI();
 
     }
 
     private void initUI() {
 
-        iv_camera= (ImageView) findViewById(R.id.iv_camera);
-        tv_guaduan= (TextView) findViewById(R.id.tv_guaduan);
-        tv_jieting= (TextView) findViewById(R.id.tv_jieting);
+        iv_camera =  findViewById(R.id.iv_camera);
+        tv_guaduan =  findViewById(R.id.tv_guaduan);
+        tv_jieting =  findViewById(R.id.tv_jieting);
         //挂断按键
         tv_guaduan.setOnClickListener(new View.OnClickListener() {
             @Override

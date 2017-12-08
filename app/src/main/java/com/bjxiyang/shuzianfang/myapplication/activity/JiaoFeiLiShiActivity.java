@@ -12,7 +12,6 @@ import com.bjxiyang.shuzianfang.myapplication.adapter.WuYeJiaoFeiLiShiAdapter;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.model.WuYeJiaoFeiLiShi;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.myapplication.until.DialogUntil;
 import com.bjxiyang.shuzianfang.myapplication.until.MyUntil;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;

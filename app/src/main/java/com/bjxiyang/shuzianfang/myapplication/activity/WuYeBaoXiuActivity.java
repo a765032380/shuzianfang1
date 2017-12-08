@@ -27,7 +27,6 @@ import com.bjxiyang.shuzianfang.myapplication.model.ImageUrl;
 import com.bjxiyang.shuzianfang.myapplication.model.ImageUrl2;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response2;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.myapplication.until.DialogUntil;
 import com.bjxiyang.shuzianfang.myapplication.until.MyUntil;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
@@ -290,25 +289,6 @@ public class WuYeBaoXiuActivity extends MySwipeBackActivity implements View.OnCl
                     });
                 }
 
-//                RequestCenter.register(url,map,new DisposeDataListener() {
-//                    @Override
-//                    public void onSuccess(Object responseObj) {
-//                        DialogUntil.closeLoadingDialog();
-//                        FanHui fanHui= (FanHui) responseObj;
-//                        if (fanHui.getCode().equals("1000")){
-//                            Toast.makeText(WuYeBaoXiuActivity.this,"提交成功",Toast.LENGTH_LONG).show();
-//                            finish();
-//                        }else {
-//                            Toast.makeText(WuYeBaoXiuActivity.this,fanHui.getMsg(),Toast.LENGTH_LONG).show();
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onFailure(Object reasonObj) {
-//                        DialogUntil.closeLoadingDialog();
-//                        MyDialog.showDialog(WuYeBaoXiuActivity.this,"请检查网络");
-//                    }
-//                });
                 break;
 
         }

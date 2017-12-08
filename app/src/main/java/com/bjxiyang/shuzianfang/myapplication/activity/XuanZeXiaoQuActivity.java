@@ -19,7 +19,6 @@ import com.bjxiyang.shuzianfang.myapplication.manager.MyPreferences;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.model.SelectPlot;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.myapplication.until.DialogUntil;
 import com.bjxiyang.shuzianfang.myapplication.until.MyUntil;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
@@ -147,24 +146,6 @@ public class XuanZeXiaoQuActivity extends MySwipeBackActivity
                         }else {
                             lv_qitashequ.setVisibility(View.VISIBLE);
                             tv_qitashequ.setVisibility(View.GONE);
-//                            list=new ArrayList<String>();
-//                            for (int i=0;i<mList.size();i++){
-//                                list.add(mList.get(i).getCommunityName()+mList.get(i).getNperName()
-//                                +mList.get(i).getFloorName()+mList.get(i).getUnitName()+mList.get(i).getDoorName());
-//                            }
-//                            for (int i=0;i<mList.size();i++) {
-//                                for (int j=0;j<i;j++){
-//                                    if ((mList.get(i).getCommunityName()+mList.get(i).getNperName())
-//                                            .equals((mList.get(j).getCommunityName()+mList.get(j).getNperName())))
-//                                    {
-//                                        mList.remove(i);
-//                                    }
-//                                }
-//                                if (mList.get(i).getCommunityId()==SPManager.getInstance().getInt("communityId",0)
-//                                        &&mList.get(i).getNperId()==SPManager.getInstance().getInt("nperId_one",0)){
-//                                    mList.remove(i);
-//                                }
-//                            }
                             adapter=new XYXuanZeXiaoQuAdapter(XuanZeXiaoQuActivity.this,mList);
                             lv_qitashequ.setAdapter(adapter);
                         }

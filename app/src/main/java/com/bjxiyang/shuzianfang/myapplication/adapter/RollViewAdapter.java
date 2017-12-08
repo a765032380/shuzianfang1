@@ -7,8 +7,8 @@ import android.widget.ImageView;
 
 import com.baisi.imoocsdk.imageloader.ImageLoaderManager;
 import com.bjxiyang.shuzianfang.myapplication.model.GuangGao;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.HomeActivity;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MyWebViewActivity;
+import com.bjxiyang.shuzianfang.myapplication.activity.HomeActivity;
+import com.bjxiyang.shuzianfang.myapplication.activity.MyWebViewActivity;
 import com.jude.rollviewpager.RollPagerView;
 import com.jude.rollviewpager.adapter.LoopPagerAdapter;
 

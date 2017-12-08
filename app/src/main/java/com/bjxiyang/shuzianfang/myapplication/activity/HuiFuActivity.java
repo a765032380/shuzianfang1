@@ -11,7 +11,6 @@ import android.widget.RelativeLayout;
 import com.bjxiyang.shuzianfang.R;
 import com.bjxiyang.shuzianfang.myapplication.adapter.MyFragmentAdapter;
 import com.bjxiyang.shuzianfang.myapplication.fragment_key.TaRenHuiFuFragment;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.myapplication.view.PagerSlidingTabStrip;
 
 import java.util.ArrayList;

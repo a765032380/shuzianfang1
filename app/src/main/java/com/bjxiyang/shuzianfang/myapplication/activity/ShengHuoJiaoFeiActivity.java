@@ -12,10 +12,8 @@ import android.widget.Toast;
 import com.baisi.myapplication.okhttp.listener.DisposeDataListener;
 import com.bjxiyang.shuzianfang.myapplication.model.SelectPlot;
 import com.bjxiyang.shuzianfang.myapplication.response_xy.XY_Response;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MySwipeBackActivity;
 import com.bjxiyang.shuzianfang.R;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.YiJianFanKuiActivity;
 import com.bjxiyang.shuzianfang.myapplication.until.DialogUntil;
 import com.bjxiyang.shuzianfang.myapplication.until.MyUntil;
 import com.bjxiyang.shuzianfang.myapplication.update.network.RequestCenter;
@@ -78,7 +76,6 @@ public class ShengHuoJiaoFeiActivity extends MySwipeBackActivity implements View
         ll_tousujianyi.setOnClickListener(this);
         ll_weixiufuwu.setOnClickListener(this);
         iv_shenghuojiaofei_fanhui= (RelativeLayout) findViewById(R.id.iv_shenghuojiaofei_fanhui);
-//        tv_shopname= (TextView) findViewById(R.id.tv_shopname);
         ll_address= (LinearLayout) findViewById(R.id.ll_address);
         ll_shuifei= (LinearLayout) findViewById(R.id.ll_shuifei);
         ll_dianfei= (LinearLayout) findViewById(R.id.ll_dianfei);
@@ -90,7 +87,6 @@ public class ShengHuoJiaoFeiActivity extends MySwipeBackActivity implements View
         ll_youxiandianshi.setOnClickListener(this);
         ll_nuanqifei.setOnClickListener(this);
         iv_shenghuojiaofei_fanhui.setOnClickListener(this);
-//        ll_address.setOnClickListener(this);
         ll_shuifei.setOnClickListener(this);
         ll_dianfei.setOnClickListener(this);
         ll_ranqifei.setOnClickListener(this);
@@ -135,48 +131,12 @@ public class ShengHuoJiaoFeiActivity extends MySwipeBackActivity implements View
     {
         if (mList.size()>0){
             commonActionSheetDialog = new CommonActionSheetDialog(ShengHuoJiaoFeiActivity.this);
-
-
-
-
-
             for (int i=0;i<mList.size();i++) {
-//                    for (int j=0;j<i;j++){
-//                        if (!(mList.get(i).getCommunityName()+mList.get(i).getNperName())
-//                                .equals((mList.get(j).getCommunityName()+mList.get(j).getNperName())))
-//                        {
-//                            commonActionSheetDialog.addMenuItem(mList.get(i).getCommunityName()
-//                                    + mList.get(i).getNperName());
-//                        }
-//                        else {
-//                            commonActionSheetDialog.addMenuItem(mList.get(i).getCommunityName()
-//                                    + mList.get(i).getNperName());
-//                        }
-//
-//                    }
-
-
                 commonActionSheetDialog.addMenuItem(mList.get(i).getCommunityName()
                         + mList.get(i).getNperName() +
                         mList.get(i).getUnitName() +
                         mList.get(i).getDoorName());
-//                if (i>0){
-//                    if (!(mList.get(i).getCommunityName()+mList.get(i).getNperName())
-//                            .equals((mList.get(i-1).getCommunityName()+mList.get(i-1).getNperName())))
-//                    {
-//                        commonActionSheetDialog.addMenuItem(mList.get(i).getCommunityName()
-//                                + mList.get(i).getNperName());
-//                    }
-//                }else {
-//                    commonActionSheetDialog.addMenuItem(mList.get(i).getCommunityName()
-//                            + mList.get(i).getNperName());
-//                }
             }
-//                for (SelectPlot.Obj item:mList){
-//
-//                    commonActionSheetDialog.addMenuItem(item.getCommunityName()
-//                            +item.getNperName());
-//                }
             commonActionSheetDialog.setMenuListener(new CommonActionSheetDialog.MenuListener() {
                 @Override
                 public void onItemSelected(int position, String item) {
@@ -185,8 +145,6 @@ public class ShengHuoJiaoFeiActivity extends MySwipeBackActivity implements View
                             + mList.get(position).getNperName() +
                             mList.get(position).getUnitName() +
                             mList.get(position).getDoorName();
-
-//                    tv_shopname.setText(name);
                 }
                 @Override
                 public void onCancel() {
@@ -230,7 +188,6 @@ public class ShengHuoJiaoFeiActivity extends MySwipeBackActivity implements View
                 break;
             //物业保修
             case R.id.ll_weixiufuwu:
-
                 MyUntil.mStartActivity(ShengHuoJiaoFeiActivity.this,WuYeBaoXiuActivity.class);
                 break;
             //投诉建议
@@ -245,7 +202,6 @@ public class ShengHuoJiaoFeiActivity extends MySwipeBackActivity implements View
             //记录
             case R.id.rl_jilu:
                 MyUntil.mStartActivity(ShengHuoJiaoFeiActivity.this,LiShiJiLuActivty.class);
-
                 break;
             case R.id.ll_nuanqifei:
                 startAli();
@@ -273,9 +229,5 @@ public class ShengHuoJiaoFeiActivity extends MySwipeBackActivity implements View
         }catch(Exception e){
             Toast.makeText(this, "没有安装支付宝", Toast.LENGTH_LONG).show();
         }
-//        Intent i = new Intent();
-////        i.setAction(Intent.);
-//        i.setData(Uri.parse("alipays://platformapi/startapp?appId=49"));
-//        startActivity(i);
     }
 }

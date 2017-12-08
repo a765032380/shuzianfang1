@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import com.baisi.imoocsdk.imageloader.ImageLoaderManager;
 import com.bjxiyang.shuzianfang.R;
 import com.bjxiyang.shuzianfang.myapplication.model.GuangGao;
-import com.bjxiyang.shuzianfang.myapplication.ui.activity.MyWebViewActivity;
 import com.bjxiyang.shuzianfang.myapplication.until.GetGuanggaoUrl;
 
 /**
@@ -21,7 +20,6 @@ public class HomeGuangGaoActivity extends Activity {
 
     private ImageView iv_guanggao;
     private ImageView imageView;
-//    private LinearLayout ll_guanggao;
     private String url,imageurl;
 
     @Override
@@ -29,19 +27,11 @@ public class HomeGuangGaoActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guanggao);
         initUI();
-
     }
 
     private void initUI() {
-//        ll_guanggao= (LinearLayout) findViewById(R.id.ll_guanggao);
-//        ll_guanggao.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                finish();
-//            }
-//        });
-        iv_guanggao= (ImageView) findViewById(R.id.iv_guanggao);
-        imageView= (ImageView) findViewById(R.id.imageView);
+        iv_guanggao= findViewById(R.id.iv_guanggao);
+        imageView=  findViewById(R.id.imageView);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,10 +52,6 @@ public class HomeGuangGaoActivity extends Activity {
                 startActivity(intent);
             }
         });
-//        getImageUrl();
-
-
-
     }
     private void getImageUrl(){
         GetGuanggaoUrl.setOnGetImageUrl(2, new GetGuanggaoUrl.OnGetImageUrl() {
