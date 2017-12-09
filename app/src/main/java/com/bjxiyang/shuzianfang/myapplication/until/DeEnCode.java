@@ -61,5 +61,9 @@ public class DeEnCode {
         String dec = decrypt(enc);
         System.out.println(enc);
         System.out.println(dec);
+
+
+
+
     }
 }

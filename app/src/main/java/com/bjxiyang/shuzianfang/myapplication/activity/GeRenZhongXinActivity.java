@@ -5,7 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -18,6 +21,7 @@ import android.widget.TextView;
 import com.baisi.imoocsdk.imageloader.ImageLoaderManager;
 import com.baisi.myapplication.okhttp.listener.DisposeDataListener;
 import com.bjxiyang.shuzianfang.R;
+import com.bjxiyang.shuzianfang.myapplication.luban.LuBan;
 import com.bjxiyang.shuzianfang.myapplication.manager.SPManager;
 import com.bjxiyang.shuzianfang.myapplication.model.GuangGao;
 import com.bjxiyang.shuzianfang.myapplication.model.Users1;
@@ -296,7 +300,7 @@ public class GeRenZhongXinActivity extends MySwipeBackActivity implements View.O
                 startIntent(ShengHuoJiaoFeiActivity.class);
                 break;
             case R.id.ll_yaoqinghaoyou:
-                shareToWeChatWithWebpage(GeRenZhongXinActivity.this,"http://www.bjxiyang.com/share/","测试","我是测试数据",SendMessageToWX.Req.WXSceneSession);
+                shareToWeChatWithWebpage(GeRenZhongXinActivity.this,"http://www.bjxiyang.com/share/","数字安防","我们生活在安全的社区",SendMessageToWX.Req.WXSceneSession);
                 break;
         }
     }
@@ -317,7 +321,8 @@ public class GeRenZhongXinActivity extends MySwipeBackActivity implements View.O
         wxMediaMessage.mediaObject = wxWebpageObject;
         wxMediaMessage.title = title;
         wxMediaMessage.description = description;
-//        wxMediaMessage.thumbData =bmpToByteArray(BitmapFactory.decodeResource(context.getResources(), R.mipmap.logo_app), true);
+        Bitmap thumb = BitmapFactory.decodeResource(getResources(), R.drawable.logo200);
+        wxMediaMessage.thumbData =bmpToByteArray(thumb, 20);
 
         SendMessageToWX.Req req = new SendMessageToWX.Req();
         req.transaction = String.valueOf(System.currentTimeMillis());
@@ -441,10 +446,6 @@ public class GeRenZhongXinActivity extends MySwipeBackActivity implements View.O
                     ImageLoaderManager.getInstance(GeRenZhongXinActivity.this)
                             .displayImage(viv_touxiang,users.getObj().getHeadPhotoUrl());
                     SPManager.getInstance().putString("headPhotoUrl",users.getObj().getHeadPhotoUrl());
-
-
-
-
                 }
 
             }
@@ -456,20 +457,16 @@ public class GeRenZhongXinActivity extends MySwipeBackActivity implements View.O
         });
     }
 
-    public  byte[] bmpToByteArray(final Bitmap bmp, final boolean needRecycle) {
+    public  byte[] bmpToByteArray(final Bitmap bmp, int maxkb) {
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         bmp.compress(Bitmap.CompressFormat.PNG, 100, output);
-        if (needRecycle) {
-            bmp.recycle();
+        int options = 100;
+        while (output.toByteArray().length > maxkb&& options != 10) {
+            output.reset(); //清空output
+            bmp.compress(Bitmap.CompressFormat.JPEG, options, output);//这里压缩options%，把压缩后的数据存放到output中
+            options -= 10;
         }
-
-        byte[] result = output.toByteArray();
-        try {
-            output.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return result;
+        return output.toByteArray();
     }
     private void getImageUrl(){
         GetGuanggaoUrl.setOnGetImageUrl(4, new GetGuanggaoUrl.OnGetImageUrl() {
