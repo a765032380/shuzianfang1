@@ -2,17 +2,24 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/anzhangmen.iml" filepath="$PROJECT_DIR$/anzhangmen.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\anzhangmen.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\anzhangmen.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\app\app.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/imoocsdk/imoocsdk.iml" filepath="$PROJECT_DIR$/imoocsdk/imoocsdk.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\imoocsdk\imoocsdk.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\imoocsdk\imoocsdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\myapplication\myapplication.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\myapplication\myapplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/pullToRefresh/pullToRefresh.iml" filepath="$PROJECT_DIR$/pullToRefresh/pullToRefresh.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\pullToRefresh\pullToRefresh.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\pullToRefresh\pullToRefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/qAMasterSDK/qAMasterSDK.iml" filepath="$PROJECT_DIR$/qAMasterSDK/qAMasterSDK.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shuzianfang.iml" filepath="$PROJECT_DIR$/shuzianfang.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/shuzianfang1.iml" filepath="$PROJECT_DIR$/.idea/shuzianfang1.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\qAMasterSDK\qAMasterSDK.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\qAMasterSDK\qAMasterSDK.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\shuzianfang.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\shuzianfang.iml" />
       <module fileurl="file://$PROJECT_DIR$/shuzianfang1.iml" filepath="$PROJECT_DIR$/shuzianfang1.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\.idea\shuzianfang1.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\.idea\shuzianfang1.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\shuzianfang1.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\shuzianfang1.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewspreadtranslationlibrary/viewspreadtranslationlibrary.iml" filepath="$PROJECT_DIR$/viewspreadtranslationlibrary/viewspreadtranslationlibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zhishequ1.iml" filepath="$PROJECT_DIR$/zhishequ1.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\viewspreadtranslationlibrary\viewspreadtranslationlibrary.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\viewspreadtranslationlibrary\viewspreadtranslationlibrary.iml" />
+      <module fileurl="file://C:\Users\Administrator\StudioProjects\shuzianfang1\zhishequ1.iml" filepath="C:\Users\Administrator\StudioProjects\shuzianfang1\zhishequ1.iml" />
     </modules>
   </component>
 </project>

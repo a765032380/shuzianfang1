@@ -8,10 +8,10 @@
     >
         <ImageView
             android:id="@+id/iv_open_door"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="143dp"
+            android:layout_height="124dp"
             android:layout_gravity="center"
-            android:background="@drawable/a_btn_blue" />
+            android:background="@drawable/a_btn_lv" />
         <TextView
             android:id="@+id/tv_open_door"
             android:layout_width="141dp"

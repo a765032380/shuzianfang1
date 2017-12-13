@@ -69,8 +69,8 @@
 
             <com.bjxiyang.shuzianfang.myapplication.view.CircleImageView
                 android:id="@+id/viv_touxiang"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/g_img_touxiang" />
 
@@ -80,8 +80,6 @@
                 android:layout_marginLeft="10dp"
                 android:gravity="center_vertical"
                 android:orientation="vertical">
-
-
                 <TextView
                     android:id="@+id/tv_phone"
                     android:layout_width="wrap_content"
@@ -89,12 +87,10 @@
                     android:text="未登录"
                     android:textColor="#333333"
                     android:textSize="22sp" />
-
                 <LinearLayout
                     android:id="@+id/ll_gerenxinxi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
@@ -112,17 +108,35 @@
                         android:background="@drawable/a_btn_jinru" />
                 </LinearLayout>
             </LinearLayout>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_shequchengjiu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+        <LinearLayout
             android:layout_marginTop="15dp"
-            android:text="社区成就"
-            android:textColor="#909090"
-            android:textSize="12sp" />
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/tv_shequchengjiu"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="社区成就"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_marginRight="20dp"
+                android:background="@drawable/a_f_btn_duihuan"
+                android:layout_width="52dp"
+                android:gravity="center"
+                android:textColor="#00bdb2"
+                android:text="兑换"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        
 
         <View
             android:layout_width="match_parent"
@@ -144,20 +158,30 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/a_f_icon_shouhu"
+        android:layout_width="15dp"
+        android:layout_height="16dp" />
+    <TextView
+        android:id="@+id/tv_kaimencishu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#323232"
+        android:textSize="22sp" />
 
-                <TextView
-                    android:id="@+id/tv_kaimencishu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textColor="#323232"
-                    android:textSize="21sp" />
+</LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dp10"
-                    android:text="开门次数"
+                    android:text="守护值(次数)"
                     android:textColor="#323232"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -168,20 +192,31 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tv_bushu"
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textColor="#323232"
-                    android:textSize="21sp" />
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/a_f_icon_jiankang"
+                        android:layout_width="15dp"
+                        android:layout_height="16dp" />
+                    <TextView
+                        android:id="@+id/tv_bushu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#323232"
+                        android:textSize="22sp" />
+
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dp10"
-                    android:text="步数"
+                    android:text="健康值"
                     android:textColor="#323232"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -192,20 +227,32 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tv_kaluli"
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textColor="#323232"
-                    android:textSize="21sp" />
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/a_f_icon_gongxian"
+                        android:layout_width="15dp"
+                        android:layout_height="16dp" />
+                    <TextView
+                        android:id="@+id/tv_kaluli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#323232"
+                        android:textSize="21sp" />
+
+
+                </LinearLayout>
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dp10"
-                    android:text="消耗卡路里"
+                    android:text="贡献值"
                     android:textColor="#323232"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -235,14 +282,14 @@
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/b_icon_jiru" />
+                    android:background="@drawable/a_f_youhuiquan" />
 
                 <TextView
                     android:id="@+id/tv_menjinjilu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp10"
-                    android:text="门禁记录"
+                    android:text="优惠券"
                     android:textColor="#333333"
                     android:textSize="15sp" />
             </LinearLayout>
@@ -265,7 +312,7 @@
                     android:layout_width="14dp"
                     android:layout_height="17dp"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/b_icon_shouquan" />
+                    android:background="@drawable/a_f_icon_shouquan" />
 
                 <TextView
                     android:id="@+id/tv_yaoshishouquan"
@@ -295,7 +342,7 @@
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/b_icon_fuwu" />
+                    android:background="@drawable/a_f_icon_shenhuo" />
 
                 <TextView
                     android:id="@+id/tv_shenghuofuwu"
@@ -325,7 +372,7 @@
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/b_icon_yaoqing" />
+                    android:background="@drawable/a_f_icon_yaoqing" />
 
                 <TextView
                     android:id="@+id/tv_yaoqinghaoyou"
@@ -355,7 +402,7 @@
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/b_icon_fankui" />
+                    android:background="@drawable/a_f_icon_yijian" />
 
                 <TextView
                     android:id="@+id/tv_yijianfankui"
@@ -394,7 +441,7 @@
                     <com.bjxiyang.shuzianfang.myapplication.view.RoundByXfermode
                         android:id="@+id/home_sun"
                         android:layout_width="match_parent"
-                        android:layout_height="70dp"
+                        android:layout_height="60dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/banner1">
 

@@ -37,19 +37,19 @@
                 android:id="@+id/iv_menjinjilu_up"
                 android:layout_width="2dp"
                 android:layout_height="28dp"
-                android:background="@drawable/a_bg_theprogressbar" />
+                android:background="@drawable/b_b_bg_xian" />
 
             <ImageView
                 android:id="@+id/iv_menjinjilu_date"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:background="@drawable/a_icon_time" />
+                android:background="@drawable/b_b_icon_dajiedian" />
 
             <ImageView
                 android:id="@+id/iv_menjinjilu_below"
                 android:layout_width="2dp"
                 android:layout_height="28dp"
-                android:background="@drawable/a_bg_theprogressbar" />
+                android:background="@drawable/b_b_bg_xian" />
         </LinearLayout>
 
         <LinearLayout
@@ -66,7 +66,8 @@
                 android:layout_height="wrap_content"
                 android:text="2017-05-05"
                 android:gravity="center"
-                android:background="@drawable/a_btn_time1"/>
+                android:textColor="#ffffff"
+                android:background="@drawable/b_b__btn_time"/>
 
             <TextView
                 android:visibility="gone"
@@ -118,18 +119,18 @@
                 android:id="@+id/iv_menjinjilu_item_up"
                 android:layout_width="2dp"
                 android:layout_height="37dp"
-                android:background="@drawable/a_bg_theprogressbar" />
+                android:background="@drawable/b_b_bg_xian" />
 
             <ImageView
                 android:layout_width="9dp"
                 android:layout_height="9dp"
-                android:background="@drawable/a_icon_blue1" />
+                android:background="@drawable/b_b_icon_lv" />
 
             <ImageView
                 android:id="@+id/iv_menjinjilu_item_below"
                 android:layout_width="2dp"
                 android:layout_height="36dp"
-                android:background="@drawable/a_bg_theprogressbar" />
+                android:background="@drawable/b_b_bg_xian" />
         </LinearLayout>
 
         <LinearLayout
@@ -144,14 +145,14 @@
                 android:layout_width="5dp"
                 android:layout_height="5dp"
                 android:layout_marginLeft="5dp"
-                android:background="@drawable/a_icon_display" />
+                android:background="@drawable/b_b_icon_display_tp" />
 
             <com.bjxiyang.shuzianfang.myapplication.view.CircleImageView
                 android:id="@+id/iv_menjinjilu_touxiang"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="5dp"
-                android:background="@drawable/c_img_touxiang" />
+                android:background="@drawable/a_f_bg_touxiang" />
 
             <LinearLayout
                 android:layout_width="wrap_content"

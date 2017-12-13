@@ -6,13 +6,13 @@ android {
         debug {
             keyAlias 'zhishequ'
             keyPassword '123456'
-            storeFile file("/Users/gll/Desktop/bjxiyang.jks")
+            storeFile file("C:/Users/Administrator/Desktop/bjxiyang.jks")
             storePassword '123456'
         }
         bjxiyang {
             keyAlias 'zhishequ'
             keyPassword '123456'
-            storeFile file('/Users/gll/Desktop/bjxiyang.jks')
+            storeFile file('C:/Users/Administrator/Desktop/bjxiyang.jks')
             storePassword '123456'
         }
     }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="120dp"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="47dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
@@ -15,11 +15,11 @@
             android:id="@+id/iv_photo"
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:background="@drawable/c_icon_wode" />
+            android:background="@drawable/e_icon_wode" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:orientation="vertical">
 
@@ -39,6 +39,7 @@
                     android:textSize="17sp" />
 
                 <TextView
+                    android:layout_marginRight="20dp"
                     android:id="@+id/tv_xitongxiaoxi_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,9 +50,9 @@
             <TextView
                 android:id="@+id/tv_xitongxiaoxi_neirong"
                 android:layout_width="match_parent"
+                android:layout_marginRight="126dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:singleLine="true"
                 android:text="系统提示"
                 android:textColor="#999999"
                 android:textSize="14sp" />
@@ -69,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
         android:text="立即查看"
-        android:textColor="#4181ff"
+        android:textColor="#40c8a4"
         android:layout_marginRight="5dp"
         android:textSize="14sp"
         />

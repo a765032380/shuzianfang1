@@ -68,18 +68,71 @@
 
 
     </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/b_b_bg_kaimenchengjiu">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="今日开门(次)"
+                android:textSize="15sp"
+                android:textColor="#323232"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_big_chengzhangzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120"
+            android:textColor="#323232"
+            android:textSize="55sp" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+            <TextView
+                android:text="获得成长值:"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="+6"
+                android:textSize="15sp"
+                android:textColor="#ff2d2d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:background="#f1f1f1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
     <com.bjxiyang.shuzianfang.myapplication.view.RefreshLayout
-        android:visibility="gone"
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
-        <com.bjxiyang.shuzianfang.myapplication.view.MyListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/lv_menjinjilu"
-            android:layout_marginLeft="40dp">
-        </com.bjxiyang.shuzianfang.myapplication.view.MyListView>
+        android:visibility="visible">
+
+            <com.bjxiyang.shuzianfang.myapplication.view.MyListView
+                android:id="@+id/lv_menjinjilu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"></com.bjxiyang.shuzianfang.myapplication.view.MyListView>
+
 
     </com.bjxiyang.shuzianfang.myapplication.view.RefreshLayout>
     <android.support.v4.widget.SwipeRefreshLayout

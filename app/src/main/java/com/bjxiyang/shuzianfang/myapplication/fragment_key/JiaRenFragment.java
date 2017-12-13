@@ -1,5 +1,6 @@
 package com.bjxiyang.shuzianfang.myapplication.fragment_key;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -49,6 +51,7 @@ public class JiaRenFragment extends Fragment implements View.OnClickListener,Swi
     private SwipeRefreshLayout swipeRefreshLayout1;
     private SwipeRefreshLayout swipeRefreshLayout2;
     private Set<SwipeListLayout> sets = new HashSet();
+    private  XYKeyaccreditAdapter adapter;
 
 
     public JiaRenFragment(int type){
@@ -85,6 +88,7 @@ public class JiaRenFragment extends Fragment implements View.OnClickListener,Swi
         swipeRefreshLayout2= (SwipeRefreshLayout) view.findViewById(R.id.swipeRefreshLayout2);
         swipeRefreshLayout2.setOnRefreshListener(this);
         swipeRefreshLayout2.setColorSchemeResources(R.color.color_898787);
+        mListView.setSelector(R.color.black);
     }
 
     @Override
@@ -108,8 +112,9 @@ public class JiaRenFragment extends Fragment implements View.OnClickListener,Swi
                 if (permissionList.getCode().equals("1000")){
                     mList= permissionList.getObj();
                     if (mList.size()>0){
-                        XYKeyaccreditAdapter adapter=new XYKeyaccreditAdapter(getContext(),mList);
+                       adapter=new XYKeyaccreditAdapter(getContext(),mList);
                         mListView.setAdapter(adapter);
+
                         showShuJu();
                     }else {
                         showWuShuJu();

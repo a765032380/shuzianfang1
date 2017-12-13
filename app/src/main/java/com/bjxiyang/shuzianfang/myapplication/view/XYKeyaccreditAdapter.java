@@ -48,6 +48,8 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
     private int status;
     private int activeUser;
     private int permissionId;
+    private int clickTemp = -1;//标识被选择的item
+    private int[] clickedList;//这个数组用来存放item的点击状态
     private Viewholder viewholder;
     private PermissionList.Obj obj;
     private PermissionList.Obj obj1;
@@ -59,6 +61,10 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
     public  XYKeyaccreditAdapter(Context mContext, List mList) {
         this.mContext = mContext;
         this.mList = mList;
+        clickedList=new int[mList.size()];
+        for (int i =0;i<mList.size();i++){
+            clickedList[i]=0;      //初始化item点击状态的数组
+        }
     }
     @Override
     public int getCount() {
@@ -139,62 +145,6 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
 
 
         delete(position);
-
-
-//            if (mList.get(position).getC_memberId()==c_memberId){
-//                    activeUser=mList.get(position).getRoleType();
-//
-//                if (activeUser== UserType.USER_OWNER||activeUser== UserType.USER_LESSEE){
-//                    viewholder.ib_jinyong_qiyong.setVisibility(View.VISIBLE);
-//                }else {
-//                    viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
-//                }
-//            }
-//            if (mList.get(position).getRoleType()!=UserType.USER_OWNER
-//                    &&mList.get(position).getC_memberId()!=c_memberId){
-//                viewholder.ib_jinyong_qiyong.setVisibility(View.VISIBLE);
-//            }else {
-//                viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
-//            }
-////            else {
-////                viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
-////            }
-//            if (mList.get(position).getRoleType()==(UserType.USER_FOLK)){
-////                viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
-//                //如果是家人类型，就显示家人类型的图片
-//                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxiang);
-//                viewholder.iv_zukejiaren.setText("业主");
-//            }else if (mList.get(position).getRoleType()==(UserType.USER_OWNER)) {
-//                if (mList.get(position).getStatus()== UserState.START_USING){
-////                    viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
-//                }else {
-////                    viewholder.ib_jinyong_qiyong.setVisibility(View.INVISIBLE);
-//                }
-//
-//                //如果是业主类型，就显示业主类型的图片
-//                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxiang);
-//                viewholder.iv_zukejiaren.setText("业主");
-//            }else if (mList.get(position).getRoleType()==(UserType.USER_LESSEE)){
-//                //否则就是租客类型的
-//                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxaing3);
-//                viewholder.iv_zukejiaren.setText("租客");
-//                if (mList.get(position).getC_memberId()!= Integer.valueOf(SPManager.getInstance().getString("c_memberId",""))){
-//
-////                    viewholder.ib_jinyong_qiyong.setVisibility(View.VISIBLE);
-////                    viewholder.item_xiugai.setVisibility(View.VISIBLE);
-//                }else {
-////                    viewholder.ib_jinyong_qiyong.setVisibility(View.GONE);
-////                    viewholder.item_xiugai.setVisibility(View.GONE);
-//                }
-//
-//
-//            }else if(mList.get(position).getRoleType()==(UserType.USER_LESSEE_HOME)){
-////                viewholder.ib_jinyong_qiyong.setVisibility(View.VISIBLE);
-////                viewholder.item_xiugai.setVisibility(View.VISIBLE);
-//                //否则就是租客家人
-//                viewholder.iv_zukejiaren.setBackgroundResource(R.drawable.c_btn_touxaing3);
-//                viewholder.iv_zukejiaren.setText("租客");
-////                viewholder.iv_zukejiaren.setText("租户家人");
 //
 
         if (obj.getStatus()== UserState.FORBIDDEN){
@@ -264,10 +214,6 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
                             }
 
                             notifyDataSetChanged();
-//                            Message message=new Message();
-//                            message.what=1000;
-//                            message.obj=obj1;
-//                            handler.sendMessage(message);
                         }else {
                             Toast.makeText(mContext,fanHui.getMsg(), Toast.LENGTH_LONG).show();
                         }
@@ -283,45 +229,6 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
 
             }
         });
-
-//        viewholder.item_xiugai.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                obj2=mList.get(position1);
-//                communityId=obj2.getCommunityId();
-//                nperId=obj2.getNperId();
-//                floorId=obj2.getFloorId();
-//                unitId=obj2.getUnitId();
-//                doorId=obj2.getDoorId();
-//                status=obj2.getStatus();
-//                permissionId=obj2.getPermissionId();
-//                DialogUntil.showLoadingDialog(mContext,"正在提交",true);
-//                String url1= XY_Response.URL_DELETEPERMISSIONS+"mobilePhone="+
-//                        UserManager.getInstance().getUser().getObj().getMobilePhone()+
-//                        "&communityId="+communityId+"&nperId="+nperId+"&floorId="+floorId+
-//                        "&unitId="+unitId+"&doorId="+doorId+
-//                        "&permissionId="+permissionId;
-//
-//                RequestCenter.deletePermission(url1, new DisposeDataListener() {
-//                    @Override
-//                    public void onSuccess(Object responseObj) {
-//                        DialogUntil.closeLoadingDialog();
-//                        FanHui fanHui= (FanHui) responseObj;
-//                        if (fanHui.getCode().equals("1000")){
-////                            Toast.makeText(mContext,"连接成功",Toast.LENGTH_LONG).show();
-//                            mList.remove(position1);
-//                            notifyDataSetChanged();
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onFailure(Object reasonObj) {
-//                        DialogUntil.closeLoadingDialog();
-//                        MyDialog.showDialog((Activity) mContext,"请检查网络连接");
-//                    }
-//                });
-//            }
-//        });
         return view;
     }
     private void showYeZhu(Viewholder viewholder){
@@ -440,5 +347,8 @@ public class XYKeyaccreditAdapter extends BaseAdapter {
                 });
             }
         });
+    }
+    public void setSeclection(int posiTion) {
+        clickTemp = posiTion;
     }
 }

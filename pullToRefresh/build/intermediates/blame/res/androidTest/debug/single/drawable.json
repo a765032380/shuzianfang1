@@ -1,18 +1,26 @@
 [
     {
-        "merged": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
-        "source": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
+        "merged": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
     },
     {
-        "merged": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
-        "source": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
+        "merged": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
     },
     {
-        "merged": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
-        "source": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
+        "merged": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
     },
     {
-        "merged": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
-        "source": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
+        "merged": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
     }
 ]

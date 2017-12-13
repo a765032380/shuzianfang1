@@ -3,6 +3,7 @@ package com.bjxiyang.shuzianfang.myapplication.activity;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 
@@ -29,6 +30,9 @@ import butterknife.ButterKnife;
  * 刻苦奋斗高二愣
  * 倔强任性是老王
  * 毫无情商贡磊磊
+ * 迷迷糊糊黄老大
+ *
+ *
  *
  */
 
@@ -89,6 +93,12 @@ public class BaoXiuLiShiActivity extends MySwipeBackActivity {
             public void onRefresh() {
                 swipeRefreshLayout.setRefreshing(false);
                 initData();
+            }
+        });
+        list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
             }
         });
 

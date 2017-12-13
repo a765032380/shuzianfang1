@@ -55,10 +55,9 @@ public class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.ViewHolder>  {
 //            viewHolder.iv_open_door.setBackgroundResource(R.drawable.a_btn_huang);
 //        }
         if (position%2==1){
-            viewHolder.iv_open_door.setBackgroundResource(R.drawable.a_btn_orange
-            );
+            viewHolder.iv_open_door.setBackgroundResource(R.drawable.a_btn_huang);
         }else {
-            viewHolder.iv_open_door.setBackgroundResource(R.drawable.a_btn_blue);
+            viewHolder.iv_open_door.setBackgroundResource(R.drawable.a_btn_lv);
         }
 
 

@@ -162,7 +162,7 @@
                         android:layout_width="120dp"
                         android:layout_height="15dp"
                         android:layout_marginTop="20dp"
-                        android:background="@drawable/a_bg_yun_3" />
+                        android:background="@drawable/a_bg_yun_1" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -273,7 +273,7 @@
                 android:layout_width="130dp"
                 android:layout_height="115dp"
                 android:layout_marginTop="35dp"
-                android:background="@drawable/a_btn_blue"
+                android:background="@drawable/a_btn_lv"
                 android:gravity="center"
                 android:text="请选择小区"
                 android:textColor="#ffffff"

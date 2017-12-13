@@ -1,34 +1,50 @@
 [
     {
-        "merged": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/res/merged/androidTest/debug/anim/slide_in_from_top.xml",
-        "source": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/bundles/debug/res/anim/slide_in_from_top.xml"
+        "merged": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
     },
     {
-        "merged": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/res/merged/androidTest/debug/anim/slide_in_from_top.xml",
-        "source": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/bundles/debug/res/anim/slide_in_from_top.xml"
+        "merged": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
+        "source": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
     },
     {
-        "merged": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/res/merged/androidTest/debug/anim/slide_out_to_bottom.xml",
-        "source": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/bundles/debug/res/anim/slide_out_to_bottom.xml"
+        "merged": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
+        "source": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
     },
     {
-        "merged": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/res/merged/androidTest/debug/anim/slide_in_from_bottom.xml",
-        "source": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/bundles/debug/res/anim/slide_in_from_bottom.xml"
+        "merged": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
+        "source": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
     },
     {
-        "merged": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/res/merged/androidTest/debug/anim/slide_out_to_top.xml",
-        "source": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/bundles/debug/res/anim/slide_out_to_top.xml"
+        "merged": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
     },
     {
-        "merged": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/res/merged/androidTest/debug/anim/slide_out_to_top.xml",
-        "source": "/Users/gll/Desktop/shuzianfang/pullToRefresh/build/intermediates/bundles/debug/res/anim/slide_out_to_top.xml"
+        "merged": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
     },
     {
-        "merged": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/res/merged/androidTest/debug/anim/slide_out_to_bottom.xml",
-        "source": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/bundles/debug/res/anim/slide_out_to_bottom.xml"
+        "merged": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
     },
     {
-        "merged": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/res/merged/androidTest/debug/anim/slide_in_from_bottom.xml",
-        "source": "/Users/gll/StudioProjects/shuzianfang1/pullToRefresh/build/intermediates/bundles/debug/res/anim/slide_in_from_bottom.xml"
+        "merged": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "C:\\Users\\gll\\Desktop\\shuzianfang\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
+        "source": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
+        "source": "C:\\Users\\gll\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
+        "source": "C:\\Users\\Administrator\\StudioProjects\\shuzianfang1\\pullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
     }
 ]

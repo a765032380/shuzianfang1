@@ -72,6 +72,8 @@ public class KaiMenDialog extends Dialog {
         if (bannerObjBean!=null){
             ImageLoaderManager.getInstance(getContext())
                     .displayImage(home_sun,bannerObjBean.getImageurl());
+            home_sun.setVisibility(View.VISIBLE);
+            ll_kaimenchenggong.setBackgroundResource(R.drawable.a_c_bg_guangao);
             home_sun.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
